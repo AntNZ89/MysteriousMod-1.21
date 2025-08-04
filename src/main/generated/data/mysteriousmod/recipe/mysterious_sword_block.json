@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "mysteriousmod:mysterious_item"
+    },
+    "l": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "lcl",
+    "lcl",
+    "lsl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysteriousmod:mysterious_sword_block"
+  }
+}

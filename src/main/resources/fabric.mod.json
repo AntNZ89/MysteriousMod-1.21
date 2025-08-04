@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "mysteriousmod",
+	"version": "${version}",
+	"name": "Mysterious Mod",
+	"description": "This is a mysterious mod",
+	"authors": [
+		"AntNZ"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mysteriousmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.antnz.mysteriousmod.MysteriousMod"
+		],
+		"fabric-datagen": [
+			"net.antnz.mysteriousmod.MysteriousModDataGenerator"
+		],
+		"cleint": [
+			"net.antnz.mysteriousmod.MysteriousModClient"
+
+
+		]
+	},
+	"mixins": [
+		"mysteriousmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

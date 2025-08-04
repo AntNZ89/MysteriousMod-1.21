@@ -1,0 +1,14 @@
+{
+
+  "item.mysteriousmod.mysterious_item": "Mysterious Item",
+
+  "block.mysteriousmod.mysterious_sword_block": "Mysterious Sword Block",
+  "block.mysteriousmod.mysterious_axe_block": "Mysterious Axe Block",
+  "block.mysteriousmod.mysterious_pickaxe_block": "Mysterious Pickaxe Block",
+  "block.mysteriousmod.mysterious_shovel_block": "Mysterious Shovel Block",
+  "block.mysteriousmod.mysterious_hoe_block": "Mysterious Hoe Block",
+
+  "itemgorup.mysteriousmod.mysterious_items": "Mysterious Items",
+  "itemgroup.mysteriousmod.mysterious_blocks": "Mysterious Blocks"
+
+}
