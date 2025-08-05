@@ -12,15 +12,15 @@ import net.minecraft.util.Identifier;
 public class ModBlocks{
 
 
-    public static final Block MYSTERIOUS_SWORD_BLOCK = registerBlock("mysterious_sword_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_SWORD_BLOCK = registerBlock("mysterious_sword_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
-    public static final Block MYSTERIOUS_AXE_BLOCK = registerBlock("mysterious_axe_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_AXE_BLOCK = registerBlock("mysterious_axe_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
-    public static final Block MYSTERIOUS_PICKAXE_BLOCK = registerBlock("mysterious_pickaxe_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_PICKAXE_BLOCK = registerBlock("mysterious_pickaxe_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
-    public static final Block MYSTERIOUS_SHOVEL_BLOCK = registerBlock("mysterious_shovel_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_SHOVEL_BLOCK = registerBlock("mysterious_shovel_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
-    public static final Block MYSTERIOUS_HOE_BLOCK = registerBlock("mysterious_hoe_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_HOE_BLOCK = registerBlock("mysterious_hoe_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
 
 

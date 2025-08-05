@@ -1,1 +1,6 @@
-// 1.21	2025-08-04T18:41:25.018996	Mysterious Mod/Block Loot Tables
+// 1.21	2025-08-05T14:13:15.4408229	Mysterious Mod/Block Loot Tables
+33abb3ca54327f1fb92b4724909651e4c3a427d3 data\mysteriousmod\loot_table\blocks\mysterious_shovel_block.json
+132190c5ccea1ab8ec7d096e1d263088665203b7 data\mysteriousmod\loot_table\blocks\mysterious_axe_block.json
+b23fd5e4c2cd122053ea5238476b53f4acd6807e data\mysteriousmod\loot_table\blocks\mysterious_pickaxe_block.json
+01e0e2d113479e11b91f0cb696433a5da148b967 data\mysteriousmod\loot_table\blocks\mysterious_hoe_block.json
+f41f5bbe2b6fc52bd5c2c1207b6191e9f7aeabdb data\mysteriousmod\loot_table\blocks\mysterious_sword_block.json

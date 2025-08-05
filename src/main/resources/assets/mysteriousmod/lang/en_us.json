@@ -2,6 +2,12 @@
 
   "item.mysteriousmod.mysterious_item": "Mysterious Item",
 
+  "item.mysteriousmod.mysterious_sword": "Mysterious Sword",
+  "item.mysteriousmod.mysterious_pickaxe": "Mysterious Pickaxe",
+  "item.mysteriousmod.mysterious_axe": "Mysterious Axe",
+  "item.mysteriousmod.mysterious_shovel": "Mysterious Shovel",
+  "item.mysteriousmod.mysterious_hoe": "Mysterious Hoe",
+
   "block.mysteriousmod.mysterious_sword_block": "Mysterious Sword Block",
   "block.mysteriousmod.mysterious_axe_block": "Mysterious Axe Block",
   "block.mysteriousmod.mysterious_pickaxe_block": "Mysterious Pickaxe Block",

@@ -1,4 +1,4 @@
-package net.antnz.mysteriousmod.tags;
+package net.antnz.mysteriousmod.util;
 
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.minecraft.block.Block;
@@ -15,8 +15,8 @@ public class ModTags {
 
 
 
-
-
+        public static final TagKey<Block> INCORRECT_FOR_MYSTERIOUS_TOOL = register("incorrect_for_mysterious_tool");
+        public static final TagKey<Block> NEEDS_MYSTERIOUS_TOOL = register("needs_mysterious_tool");
 
 
         private static TagKey<Block> register(String name){

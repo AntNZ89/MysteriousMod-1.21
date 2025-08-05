@@ -1,8 +1,10 @@
 package net.antnz.mysteriousmod.datagen;
 
+import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,7 +17,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
 
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.MYSTERIOUS_PICKAXE);
 
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.MYSTERIOUS_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.MYSTERIOUS_AXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.MYSTERIOUS_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.MYSTERIOUS_HOE);
 
 
 

@@ -20,6 +20,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
 
                         entries.add(ModItems.MYSTERIOUS_ITEM);
+                        entries.add(ModItems.MYSTERIOUS_SWORD);
+                        entries.add(ModItems.MYSTERIOUS_PICKAXE);
+                        entries.add(ModItems.MYSTERIOUS_AXE);
+                        entries.add(ModItems.MYSTERIOUS_SHOVEL);
+                        entries.add(ModItems.MYSTERIOUS_HOE);
 
                     })
                     .build());
