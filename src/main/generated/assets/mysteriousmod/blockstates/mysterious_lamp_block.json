@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "mysteriousmod:block/mysterious_lamp_block"
+    },
+    "clicked=true": {
+      "model": "mysteriousmod:block/mysterious_lamp_block_on"
+    }
+  }
+}

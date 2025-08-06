@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mysterious_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysteriousmod:mysterious_item"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mysteriousmod:mysterious_lamp_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mysterious_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mysteriousmod:mysterious_lamp_block"
+    ]
+  }
+}

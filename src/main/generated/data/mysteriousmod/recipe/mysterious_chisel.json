@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysteriousmod:mysterious_sword"
+    },
+    {
+      "item": "mysteriousmod:mysterious_pickaxe"
+    },
+    {
+      "item": "mysteriousmod:mysterious_pickaxe"
+    },
+    {
+      "item": "mysteriousmod:mysterious_hoe"
+    },
+    {
+      "item": "mysteriousmod:mysterious_shovel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysteriousmod:mysterious_chisel"
+  }
+}

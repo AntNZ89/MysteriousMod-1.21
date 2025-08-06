@@ -41,6 +41,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK);
                         entries.add(ModBlocks.MYSTERIOUS_HOE_BLOCK);
                         entries.add(ModBlocks.MYSTERIOUS_SWORD_BLOCK);
+                        entries.add(ModBlocks.MYSTERIOUS_LAMP_BLOCK);
 
                     })
                     .build());

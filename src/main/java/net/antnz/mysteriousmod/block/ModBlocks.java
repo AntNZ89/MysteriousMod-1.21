@@ -1,6 +1,7 @@
 package net.antnz.mysteriousmod.block;
 
 import net.antnz.mysteriousmod.MysteriousMod;
+import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -21,6 +22,9 @@ public class ModBlocks{
     public static final Block MYSTERIOUS_SHOVEL_BLOCK = registerBlock("mysterious_shovel_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
     public static final Block MYSTERIOUS_HOE_BLOCK = registerBlock("mysterious_hoe_block", new Block(AbstractBlock.Settings.create().requiresTool()));
+
+    public static final Block MYSTERIOUS_LAMP_BLOCK = registerBlock("mysterious_lamp_block",
+            new LampBlock(AbstractBlock.Settings.create().luminance(state-> state.get(LampBlock.CLICKED)?15:0)));
 
 
 

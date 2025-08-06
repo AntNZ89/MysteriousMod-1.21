@@ -1,12 +1,12 @@
 package net.antnz.mysteriousmod.datagen;
 
 import net.antnz.mysteriousmod.block.ModBlocks;
+import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -22,6 +22,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_HOE_BLOCK);
 
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.MYSTERIOUS_LAMP_BLOCK, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MYSTERIOUS_LAMP_BLOCK, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.MYSTERIOUS_LAMP_BLOCK)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(LampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+
+
+
+
+
     }
 
     @Override
@@ -34,6 +44,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MYSTERIOUS_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MYSTERIOUS_CHISEL, Models.HANDHELD);
 
 
     }

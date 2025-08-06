@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "mysteriousmod:mysterious_item"
+    },
+    "l": {
+      "item": "minecraft:lantern"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "clc",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysteriousmod:mysterious_lamp_block"
+  }
+}
