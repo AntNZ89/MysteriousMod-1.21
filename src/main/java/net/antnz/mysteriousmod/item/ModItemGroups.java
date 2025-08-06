@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MYSTERIOUS_AXE);
                         entries.add(ModItems.MYSTERIOUS_SHOVEL);
                         entries.add(ModItems.MYSTERIOUS_HOE);
+                        entries.add(ModItems.MYSTERIOUS_CHISEL);
 
                     })
                     .build());

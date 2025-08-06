@@ -35,7 +35,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))));
 
-    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel", new Chiseltem(new Item.Settings()));
+    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel", new Chiseltem(new Item.Settings().maxCount(1)));
 
 
 
