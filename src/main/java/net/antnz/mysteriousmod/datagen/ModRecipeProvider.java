@@ -81,7 +81,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
 
-        ;
+
 
 
 
