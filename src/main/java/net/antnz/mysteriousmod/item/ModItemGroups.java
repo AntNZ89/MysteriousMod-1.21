@@ -20,12 +20,6 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
 
                         entries.add(ModItems.MYSTERIOUS_ITEM);
-                        entries.add(ModItems.MYSTERIOUS_SWORD);
-                        entries.add(ModItems.MYSTERIOUS_PICKAXE);
-                        entries.add(ModItems.MYSTERIOUS_AXE);
-                        entries.add(ModItems.MYSTERIOUS_SHOVEL);
-                        entries.add(ModItems.MYSTERIOUS_HOE);
-                        entries.add(ModItems.MYSTERIOUS_CHISEL);
 
                     })
                     .build());
@@ -46,6 +40,25 @@ public class ModItemGroups {
 
                     })
                     .build());
+
+
+    public static final ItemGroup MYSTERIOUS_TOOLS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MysteriousMod.MOD_ID, "mysterious_tools"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MYSTERIOUS_SWORD))
+                    .displayName(Text.literal("Mysterious Tools"))
+                    .entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.MYSTERIOUS_SWORD);
+                        entries.add(ModItems.MYSTERIOUS_PICKAXE);
+                        entries.add(ModItems.MYSTERIOUS_AXE);
+                        entries.add(ModItems.MYSTERIOUS_SHOVEL);
+                        entries.add(ModItems.MYSTERIOUS_HOE);
+                        entries.add(ModItems.MYSTERIOUS_CHISEL);
+
+                    })
+                    .build());
+
+
 
 
 

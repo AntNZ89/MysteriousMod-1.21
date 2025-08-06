@@ -81,6 +81,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MYSTERIOUS_CHISEL)
+                .pattern("isi")
+                .pattern("aph")
+                .pattern("iSi")
+                .input('s', ModItems.MYSTERIOUS_SWORD)
+                .input('p', ModItems.MYSTERIOUS_PICKAXE)
+                .input('h', ModItems.MYSTERIOUS_HOE)
+                .input('a', ModItems.MYSTERIOUS_AXE)
+                .input('S', ModItems.MYSTERIOUS_SHOVEL)
+                .input('i' , ModItems.MYSTERIOUS_ITEM)
+                .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
+                .offerTo(recipeExporter);
+
+
 
 
 

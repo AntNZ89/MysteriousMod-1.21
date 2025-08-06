@@ -1,22 +1,30 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "mysteriousmod:mysterious_sword"
+  "key": {
+    "S": {
+      "item": "mysteriousmod:mysterious_shovel"
     },
-    {
-      "item": "mysteriousmod:mysterious_pickaxe"
+    "a": {
+      "item": "mysteriousmod:mysterious_axe"
     },
-    {
-      "item": "mysteriousmod:mysterious_pickaxe"
-    },
-    {
+    "h": {
       "item": "mysteriousmod:mysterious_hoe"
     },
-    {
-      "item": "mysteriousmod:mysterious_shovel"
+    "i": {
+      "item": "mysteriousmod:mysterious_item"
+    },
+    "p": {
+      "item": "mysteriousmod:mysterious_pickaxe"
+    },
+    "s": {
+      "item": "mysteriousmod:mysterious_sword"
     }
+  },
+  "pattern": [
+    "isi",
+    "aph",
+    "iSi"
   ],
   "result": {
     "count": 1,
