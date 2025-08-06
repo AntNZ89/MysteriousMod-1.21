@@ -1,5 +1,6 @@
 package net.antnz.mysteriousmod.block.custom;
 
+import net.antnz.mysteriousmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -17,9 +18,14 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import java.util.Random;
+
+
 public class LampBlock extends Block {
 
     public static final BooleanProperty CLICKED = BooleanProperty.of("clicked");
+
+    Random random = new Random();
 
     public LampBlock(Settings settings) {
         super(settings);
@@ -30,8 +36,27 @@ public class LampBlock extends Block {
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
         if (world instanceof ServerWorld){
+            BlockState newState = state.cycle(CLICKED);
             world.setBlockState(pos, state.cycle(CLICKED));
             world.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS, 1, 1);
+
+            if (newState.get(CLICKED)){
+
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 200));
+
+                int num = random.nextInt(0, 2);
+
+                if (num == 0){
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 20));
+                }
+                if (num == 1){
+                    player.addExperience(10000);
+                }
+
+
+            }
+
+
         }
 
         return ActionResult.SUCCESS;
@@ -39,28 +64,11 @@ public class LampBlock extends Block {
     }
 
 
-    @Override
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
 
-        if (world instanceof ServerWorld){
-            if (entity instanceof PlayerEntity playerEntity){
-
-                playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 200));
-
-
-            }
-
-
-
-
-        }
-
-
-        super.onSteppedOn(world, pos, state, entity);
-    }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(CLICKED);
     }
+
 }

@@ -25,7 +25,7 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_AXE = registerItem("mysterious_axe",
             new AxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 11, -4))));
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 11, -2))));
 
     public static final Item MYSTERIOUS_SHOVEL = registerItem("mysterious_shovel",
             new ShovelItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
