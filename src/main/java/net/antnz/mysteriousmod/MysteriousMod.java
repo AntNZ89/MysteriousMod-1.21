@@ -1,6 +1,7 @@
 package net.antnz.mysteriousmod;
 
 import net.antnz.mysteriousmod.block.ModBlocks;
+import net.antnz.mysteriousmod.component.ModDataComponentTypes;
 import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -20,6 +21,9 @@ public class MysteriousMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerModItemGroups();
+		ModDataComponentTypes.registerDataComponentTypes();
+		ModItems.registerFuel();
+
 
 
 
