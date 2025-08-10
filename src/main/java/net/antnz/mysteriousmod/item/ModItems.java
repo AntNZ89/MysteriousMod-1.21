@@ -50,7 +50,7 @@ public class ModItems {
 
 
     public static void registerFuel(){
-        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_FUEL, 200);
+        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_FUEL, 400);
     }
 
 
