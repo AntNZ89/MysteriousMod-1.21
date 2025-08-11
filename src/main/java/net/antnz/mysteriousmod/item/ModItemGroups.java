@@ -59,7 +59,19 @@ public class ModItemGroups {
                     .build());
 
 
+    public static final ItemGroup MYSTERIOUS_ARMOR = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MysteriousMod.MOD_ID, "mysterious_armor"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.MYSTERIOUS_HELMET))
+                    .displayName(Text.literal("Mysterious Armor"))
+                    .entries((displayContext, entries) -> {
 
+                        entries.add(ModItems.MYSTERIOUS_HELMET);
+                        entries.add(ModItems.MYSTERIOUS_CHESTPLATE);
+                        entries.add(ModItems.MYSTERIOUS_BOOTS);
+                        entries.add(ModItems.MYSTERIOUS_LEGGINGS);
+
+                    })
+                    .build());
 
 
     public static void registerModItemGroups(){

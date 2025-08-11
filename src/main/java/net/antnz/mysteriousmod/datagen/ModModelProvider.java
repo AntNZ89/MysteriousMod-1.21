@@ -6,6 +6,7 @@ import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -45,6 +46,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MYSTERIOUS_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_CHISEL, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_BOOTS));
 
 
     }

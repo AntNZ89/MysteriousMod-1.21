@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mysteriousmod:item/mysterious_helmet",
+    "layer1": "minecraft:trims/items/helmet_trim_lapis"
+  }
+}

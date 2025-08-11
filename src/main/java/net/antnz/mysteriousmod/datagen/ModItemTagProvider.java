@@ -32,7 +32,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.MYSTERIOUS_HOE);
 
-
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.MYSTERIOUS_BOOTS)
+                .add(ModItems.MYSTERIOUS_LEGGINGS)
+                .add(ModItems.MYSTERIOUS_CHESTPLATE)
+                .add(ModItems.MYSTERIOUS_HELMET);
 
     }
 }
