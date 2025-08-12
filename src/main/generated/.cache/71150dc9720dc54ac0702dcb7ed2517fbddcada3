@@ -1,4 +1,4 @@
-// 1.21	2025-08-12T00:19:39.7348678	Mysterious Mod/Model Definitions
+// 1.21	2025-08-12T23:11:44.3969795	Mysterious Mod/Model Definitions
 839bc4689e7445671f2a7c61f42a33e29cad5958 assets\mysteriousmod\models\item\mysterious_helmet_gold_trim.json
 fad2d8fe014881403de75f0b5ac1deecb41f7542 assets\mysteriousmod\blockstates\mysterious_pickaxe_block.json
 08236fd21a72f5e0f60d62c13baa14c88530f038 assets\mysteriousmod\models\item\mysterious_leggings_quartz_trim.json
@@ -10,8 +10,8 @@ df4ef14e8271dcbe5713fccf6b07913108207e6f assets\mysteriousmod\models\item\myster
 05960b243d06de20ffa0fd952617ef6e22c303c1 assets\mysteriousmod\models\item\mysterious_boots.json
 eb4c2ef943c1d8ea626fb777421f496135227d8c assets\mysteriousmod\models\item\mysterious_boots_quartz_trim.json
 64e385776da0b178fa0b28647a87c81035151034 assets\mysteriousmod\models\item\mysterious_axe_block.json
-71a4bb7dee83be52269cc260de5273ac6b5b7e3f assets\mysteriousmod\models\block\mysterious_axe_block.json
 6ac9f105e454e6663dfbef025ec54a2b8cdf3a1f assets\mysteriousmod\models\item\mysterious_chestplate_gold_trim.json
+71a4bb7dee83be52269cc260de5273ac6b5b7e3f assets\mysteriousmod\models\block\mysterious_axe_block.json
 cead4d7f2180e4bd393193153718a4380f451148 assets\mysteriousmod\models\item\mysterious_helmet_amethyst_trim.json
 bff0fa8eb51c3d794d489f0e5c74d31b3156f446 assets\mysteriousmod\blockstates\mysterious_sword_block.json
 527a7847fe59d3a74ae2936cad3bc684b5f93629 assets\mysteriousmod\models\item\mysterious_sword.json
