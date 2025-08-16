@@ -20,6 +20,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
 
                         entries.add(ModItems.MYSTERIOUS_ITEM);
+                        entries.add(ModItems.MYSTERIOUS_MUTTON);
 
                     })
                     .build());

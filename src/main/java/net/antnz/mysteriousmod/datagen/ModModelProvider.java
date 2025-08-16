@@ -39,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.MYSTERIOUS_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MYSTERIOUS_MUTTON, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MYSTERIOUS_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_PICKAXE, Models.HANDHELD);

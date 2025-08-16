@@ -19,9 +19,9 @@ public class ModItems {
 
     public static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200),1).build();
 
-    public static final Item MYSTERIOUS_FOOD = registerItem("mysterious_food", new Item(new Item.Settings().food(FOOD_COMPONENT)));
+    public static final Item MYSTERIOUS_MUTTON = registerItem("mysterious_mutton", new Item(new Item.Settings().food(FOOD_COMPONENT)));
 
-    public static final Item MYSTERIOUS_FUEL = registerItem("mysterious_fool", new Item(new Item.Settings()));
+//    public static final Item MYSTERIOUS_FUEL = registerItem("mysterious_fool", new Item(new Item.Settings()));
 
     public static final Item MYSTERIOUS_ITEM = registerItem("mysterious_item", new Item(new Item.Settings()));
 
@@ -65,9 +65,7 @@ public class ModItems {
 
 
 
-    public static void registerFuel(){
-        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_FUEL, 400);
-    }
+
 
 
 
