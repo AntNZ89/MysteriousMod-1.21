@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_SWORD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_AXE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_PICKAXE_BLOCK);
@@ -40,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MYSTERIOUS_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.MYSTERIOUS_MUTTON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MYSTERIOUS_COAL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MYSTERIOUS_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_PICKAXE, Models.HANDHELD);

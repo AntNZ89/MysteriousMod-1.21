@@ -22,7 +22,7 @@ public class MysteriousMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerModItemGroups();
 		ModDataComponentTypes.registerDataComponentTypes();
-
+		ModItems.registerFuel();
 
 
 

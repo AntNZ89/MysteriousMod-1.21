@@ -21,7 +21,7 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_MUTTON = registerItem("mysterious_mutton", new Item(new Item.Settings().food(FOOD_COMPONENT)));
 
-//    public static final Item MYSTERIOUS_FUEL = registerItem("mysterious_fool", new Item(new Item.Settings()));
+    public static final Item MYSTERIOUS_COAL = registerItem("mysterious_coal", new Item(new Item.Settings()));
 
     public static final Item MYSTERIOUS_ITEM = registerItem("mysterious_item", new Item(new Item.Settings()));
 
@@ -73,6 +73,10 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(MysteriousMod.MOD_ID, name), item);
     }
 
+
+    public static void registerFuel(){
+        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_COAL, 400);
+    }
 
 
     public static void registerModItems(){

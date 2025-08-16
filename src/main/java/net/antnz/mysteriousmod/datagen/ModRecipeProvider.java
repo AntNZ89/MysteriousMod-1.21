@@ -12,6 +12,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -21,6 +22,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
+
+        List<Item> itemList = List.of(ModItems.MYSTERIOUS_COAL);
+
+
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MYSTERIOUS_SWORD_BLOCK)
@@ -100,6 +105,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.MUTTON)
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
+
 
 
 
