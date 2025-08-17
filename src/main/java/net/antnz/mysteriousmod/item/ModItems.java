@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod.item;
 
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.item.custom.Chiseltem;
+import net.antnz.mysteriousmod.item.custom.MysteriousPickaxeItem;
 import net.antnz.mysteriousmod.item.custom.MysteriousSwordItem;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.component.type.FoodComponent;
@@ -31,7 +32,7 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 10, -2))));
 
     public static final Item MYSTERIOUS_PICKAXE = registerItem("mysterious_pickaxe",
-            new PickaxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+            new MysteriousPickaxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))));
 
     public static final Item MYSTERIOUS_AXE = registerItem("mysterious_axe",

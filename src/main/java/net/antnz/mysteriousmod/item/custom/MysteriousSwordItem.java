@@ -12,10 +12,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.Rarity;
 
 public class MysteriousSwordItem extends SwordItem {
     public MysteriousSwordItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
+        settings.rarity(Rarity.EPIC);
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
