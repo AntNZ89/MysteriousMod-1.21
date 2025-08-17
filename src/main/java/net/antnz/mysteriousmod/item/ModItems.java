@@ -23,9 +23,9 @@ public class ModItems {
 
     public static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200),1).build();
 
-    public static final Item MYSTERIOUS_MUTTON = registerItem("mysterious_mutton", new Item(new Item.Settings().food(FOOD_COMPONENT)));
+    public static final Item MYSTERIOUS_MUTTON = registerItem("mysterious_mutton", new Item(new Item.Settings().food(FOOD_COMPONENT).rarity(Rarity.RARE)));
 
-    public static final Item MYSTERIOUS_COAL = registerItem("mysterious_coal", new Item(new Item.Settings()));
+    public static final Item MYSTERIOUS_COAL = registerItem("mysterious_coal", new Item(new Item.Settings().rarity(Rarity.RARE)));
 
     public static final Item MYSTERIOUS_ITEM = registerItem("mysterious_item", new Item(new Item.Settings()));
 
@@ -54,7 +54,8 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
                     .rarity(Rarity.EPIC)));
 
-    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel", new Chiseltem(new Item.Settings().maxCount(1)));
+    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel", new Chiseltem(new Item.Settings().maxCount(1)
+            .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_BOOTS = registerItem("mysterious_boots",
             new ArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
