@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod.item;
 
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.item.custom.Chiseltem;
+import net.antnz.mysteriousmod.item.custom.MysteriousAxeItem;
 import net.antnz.mysteriousmod.item.custom.MysteriousPickaxeItem;
 import net.antnz.mysteriousmod.item.custom.MysteriousSwordItem;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -14,6 +15,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.List;
 
@@ -29,23 +31,28 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_SWORD = registerItem("mysterious_sword",
             new MysteriousSwordItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 10, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 10, -2))
+                    .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_PICKAXE = registerItem("mysterious_pickaxe",
             new MysteriousPickaxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
+                    .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_AXE = registerItem("mysterious_axe",
-            new AxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 11, -2))));
+            new MysteriousAxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 11, -2))
+                    .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_SHOVEL = registerItem("mysterious_shovel",
             new ShovelItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))));
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
+                    .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_HOE = registerItem("mysterious_hoe",
             new HoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))));
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
+                    .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel", new Chiseltem(new Item.Settings().maxCount(1)));
 
