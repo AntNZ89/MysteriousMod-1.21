@@ -1,10 +1,7 @@
 package net.antnz.mysteriousmod.item;
 
 import net.antnz.mysteriousmod.MysteriousMod;
-import net.antnz.mysteriousmod.item.custom.Chiseltem;
-import net.antnz.mysteriousmod.item.custom.MysteriousAxeItem;
-import net.antnz.mysteriousmod.item.custom.MysteriousPickaxeItem;
-import net.antnz.mysteriousmod.item.custom.MysteriousSwordItem;
+import net.antnz.mysteriousmod.item.custom.*;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -45,7 +42,7 @@ public class ModItems {
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_SHOVEL = registerItem("mysterious_shovel",
-            new ShovelItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+            new MysteriousShovelItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
                     .rarity(Rarity.EPIC)));
 
