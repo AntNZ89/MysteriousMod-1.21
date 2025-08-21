@@ -47,7 +47,7 @@ public class ModItems {
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_HOE = registerItem("mysterious_hoe",
-            new HoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+            new MysteriousHoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
                     .rarity(Rarity.EPIC)));
 
