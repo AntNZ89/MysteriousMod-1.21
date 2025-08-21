@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ModItems {
 
-    public static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200),1).build();
+    public static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200),1).nutrition(5).saturationModifier(4f).build();
 
     public static final Item MYSTERIOUS_MUTTON = registerItem("mysterious_mutton", new Item(new Item.Settings().food(FOOD_COMPONENT).rarity(Rarity.RARE)));
 

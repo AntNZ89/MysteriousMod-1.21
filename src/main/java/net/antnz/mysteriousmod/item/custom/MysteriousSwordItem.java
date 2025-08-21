@@ -1,5 +1,6 @@
 package net.antnz.mysteriousmod.item.custom;
 
+import net.antnz.mysteriousmod.block.ModBlocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -8,16 +9,34 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class MysteriousSwordItem extends SwordItem {
     public MysteriousSwordItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
         settings.rarity(Rarity.EPIC);
+    }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+
+        World world = context.getWorld();
+        BlockPos pos = context.getBlockPos();
+
+        if (world instanceof ServerWorld){
+
+            world.setBlockState(pos, ModBlocks.MYSTERIOUS_SWORD_BLOCK.getDefaultState());
+            world.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS);
+
+        }
+        return ActionResult.SUCCESS;
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {

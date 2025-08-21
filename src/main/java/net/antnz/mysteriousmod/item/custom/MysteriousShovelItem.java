@@ -15,6 +15,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -23,10 +24,13 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
+import java.util.List;
 import java.util.Map;
 
 public class MysteriousShovelItem extends ShovelItem {
     protected static final Map<Block, BlockState> PATH_STATES;
+
+    List<Block> blockList = List.of(Blocks.GRASS_BLOCK, Blocks.COARSE_DIRT, Blocks.PODZOL, Blocks.MYCELIUM, Blocks.ROOTED_DIRT);
 
     public MysteriousShovelItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
@@ -39,11 +43,14 @@ public class MysteriousShovelItem extends ShovelItem {
         BlockState blockState = world.getBlockState(blockPos);
         Block block = world.getBlockState(blockPos).getBlock();
 
-        if (block == Blocks.COBBLESTONE){
+        if (world instanceof ServerWorld){
+            if (!blockList.contains(block)){
 
-            world.setBlockState(blockPos, ModBlocks.MYSTERIOUS_SHOVEL_BLOCK.getDefaultState());
-            return ActionResult.SUCCESS;
+                world.setBlockState(blockPos, ModBlocks.MYSTERIOUS_SHOVEL_BLOCK.getDefaultState());
+                world.playSound(null, blockPos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS);
+                return ActionResult.SUCCESS;
 
+            }
         }
 
 

@@ -9,6 +9,8 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
@@ -30,6 +32,7 @@ public class MysteriousPickaxeItem extends PickaxeItem {
 
         if (world instanceof ServerWorld){
             world.setBlockState(pos, ModBlocks.MYSTERIOUS_PICKAXE_BLOCK.getDefaultState());
+            world.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS);
         }
 
         return ActionResult.SUCCESS;
