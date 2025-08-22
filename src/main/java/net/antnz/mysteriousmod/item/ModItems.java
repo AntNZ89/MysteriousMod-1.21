@@ -55,22 +55,22 @@ public class ModItems {
             .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_BOOTS = registerItem("mysterious_boots",
-            new ArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
+            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_LEGGINGS = registerItem("mysterious_leggings",
-            new ArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_CHESTPLATE = registerItem("mysterious_chestplate",
-            new ArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_HELMET = registerItem("mysterious_helmet",
-            new ArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.HELMET, new Item.Settings()
+            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
