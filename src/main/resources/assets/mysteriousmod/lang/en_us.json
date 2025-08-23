@@ -1,7 +1,6 @@
 {
 
   "item.mysteriousmod.mysterious_item": "Mysterious Item",
-
   "item.mysteriousmod.mysterious_sword": "Mysterious Sword",
   "item.mysteriousmod.mysterious_pickaxe": "Mysterious Pickaxe",
   "item.mysteriousmod.mysterious_axe": "Mysterious Axe",
@@ -10,6 +9,7 @@
   "item.mysteriousmod.mysterious_chisel": "Mysterious Chisel",
   "item.mysteriousmod.mysterious_mutton": "Mysterious Mutton",
   "item.mysteriousmod.mysterious_coal": "Mysterious Coal",
+  "item.mysteriousmod.block_remover": "Block Remover",
 
   "item.mysteriousmod.mysterious_helmet": "Mysterious Helmet",
   "item.mysteriousmod.mysterious_chestplate": "Mysterious Chestplate",

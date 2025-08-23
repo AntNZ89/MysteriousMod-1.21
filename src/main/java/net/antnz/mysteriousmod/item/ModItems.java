@@ -74,6 +74,9 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
+    public static final Item BLOCK_REMOVER = registerItem("block_remover", new BlockRemoverItem(new Item.Settings()
+            .rarity(Rarity.EPIC)));
+
 
 
 
