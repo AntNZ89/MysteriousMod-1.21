@@ -6,6 +6,7 @@ import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +24,8 @@ public class MysteriousMod implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModItems.registerFuel();
+
+
 
 
 
