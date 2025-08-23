@@ -1,4 +1,4 @@
-// 1.21	2025-08-23T18:37:55.8624887	Mysterious Mod/Recipes
+// 1.21	2025-08-23T22:21:52.6160633	Mysterious Mod/Recipes
 665f0866716f65f00b2e0b137fda65040a56f7b7 data\mysteriousmod\recipe\mysterious_sword_block.json
 640a718f53cf7d540e76e91752f13fd28c808dbc data\mysteriousmod\advancement\recipes\misc\mysterious_lamp_block.json
 f550b1374cad248501754f126782d6e359f55127 data\mysteriousmod\advancement\recipes\misc\mysterious_mutton.json
@@ -7,8 +7,10 @@ f7ab4df9ae8781d0b6cacb2c0976402f2a703614 data\mysteriousmod\advancement\recipes\
 4e72f459c33cea51e7588393e50f8436167eb3ed data\mysteriousmod\recipe\mysterious_chisel.json
 9e7d04fed22e4d66cff7bfa16410761c09a755be data\mysteriousmod\recipe\mysterious_pickaxe_block.json
 0ca018b3b14d26524491b8b709e9e7834fb7b31f data\mysteriousmod\recipe\mysterious_axe_block.json
+f7bb3f2768cb686294fbb65cc94e94efc4804957 data\mysteriousmod\advancement\recipes\misc\block_remover.json
 1c2439a268b47fe3858a8d98b3d50c90024cb72a data\mysteriousmod\advancement\recipes\misc\mysterious_axe_block.json
 aa81db464e9a3e63b8416bc45a321a59df3330ff data\mysteriousmod\recipe\mysterious_shovel_block.json
+be59c10fae71d0af7d3e2aea47a971f6a2df6eb8 data\mysteriousmod\recipe\block_remover.json
 c0bbc016565b9e5e69fb0d187710b2ce8671654d data\mysteriousmod\recipe\mysterious_hoe_block.json
 d8af3d96b68d0243fc79a44fce1231e9e4fe0084 data\mysteriousmod\recipe\mysterious_mutton.json
 b06da27d6b8b37f8092a4c5ab0486fd4940f3c23 data\mysteriousmod\advancement\recipes\misc\mysterious_chisel.json

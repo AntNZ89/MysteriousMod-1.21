@@ -75,7 +75,7 @@ public class ModItems {
                     .rarity(Rarity.EPIC)));
 
     public static final Item BLOCK_REMOVER = registerItem("block_remover", new BlockRemoverItem(new Item.Settings()
-            .rarity(Rarity.EPIC)));
+            .rarity(Rarity.EPIC).maxCount(1)));
 
 
 

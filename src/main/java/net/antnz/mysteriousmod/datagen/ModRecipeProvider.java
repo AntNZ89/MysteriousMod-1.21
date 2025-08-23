@@ -100,6 +100,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLOCK_REMOVER)
+                .pattern("  b")
+                .pattern(" s ")
+                .pattern("s  ")
+                .input('s', Items.STICK)
+                .input('b', Items.BEDROCK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+
+
+
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MYSTERIOUS_MUTTON)
                 .input(ModItems.MYSTERIOUS_ITEM)
                 .input(Items.MUTTON)

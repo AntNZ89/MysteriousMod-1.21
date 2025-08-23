@@ -2,8 +2,11 @@ package net.antnz.mysteriousmod.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -23,16 +26,27 @@ public class BlockRemoverItem extends Item {
         BlockPos pos = context.getBlockPos();
         Block block = world.getBlockState(pos).getBlock();
 
-        if (block != Blocks.BEDROCK){
+        if (world instanceof ServerWorld){
 
-            world.setBlockState(pos, Blocks.BEDROCK.getDefaultState());
+            if (block != Blocks.BEDROCK){
+                world.setBlockState(pos, Blocks.BEDROCK.getDefaultState());
+
+            }
+            else {
+                world.removeBlock(pos, false);
+
+            }
+
+            context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
+                    item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
         }
-        else {
 
-            world.removeBlock(pos, false);
 
-        }
+
+
+
+
 
         return ActionResult.SUCCESS;
 

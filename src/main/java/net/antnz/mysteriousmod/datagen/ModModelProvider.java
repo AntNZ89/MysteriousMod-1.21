@@ -1,5 +1,6 @@
 package net.antnz.mysteriousmod.datagen;
 
+import com.ibm.icu.text.Normalizer2;
 import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.antnz.mysteriousmod.item.ModItems;
@@ -49,6 +50,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MYSTERIOUS_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_CHISEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BLOCK_REMOVER, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_CHESTPLATE));
