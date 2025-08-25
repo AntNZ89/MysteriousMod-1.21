@@ -27,8 +27,8 @@ public class ModItems {
     public static final Item MYSTERIOUS_ITEM = registerItem("mysterious_item", new Item(new Item.Settings()));
 
     public static final Item MYSTERIOUS_SWORD = registerItem("mysterious_sword",
-            new MysteriousSwordItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 10, -2))
+            new SwordItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 6, -2))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_PICKAXE = registerItem("mysterious_pickaxe",
@@ -38,7 +38,7 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_AXE = registerItem("mysterious_axe",
             new MysteriousAxeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 11, -2))
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 7, -3f))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_SHOVEL = registerItem("mysterious_shovel",
@@ -64,7 +64,7 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_LEGGINGS = registerItem("mysterious_leggings",
             new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
+                    .maxCount(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_CHESTPLATE = registerItem("mysterious_chestplate",
