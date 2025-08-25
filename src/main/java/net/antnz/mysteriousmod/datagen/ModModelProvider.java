@@ -50,7 +50,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MYSTERIOUS_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MYSTERIOUS_CHISEL, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.BLOCK_REMOVER, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_CHESTPLATE));
