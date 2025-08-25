@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 public class ModArmorMaterials {
 
 
-    public static final RegistryEntry<ArmorMaterial> MYSTERIOUS_ARMOR_MATERIAL = registryEntry("mysterious",
+    public static final RegistryEntry<ArmorMaterial> MYSTERIOUS_ARMOR_MATERIALS = registryEntry("mysterious",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), typeIntegerEnumMap -> {
                 typeIntegerEnumMap.put(ArmorItem.Type.BOOTS, 2);
                 typeIntegerEnumMap.put(ArmorItem.Type.LEGGINGS, 4);
