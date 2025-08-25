@@ -51,7 +51,11 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
                     .rarity(Rarity.EPIC)));
 
+    public static final Item MYSTERIOUS_REMOVER = registerItem("mysterious_remover",
+            new RemoverItem(new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
 
+    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel",
+            new ChiselItem(new Item.Settings().rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_BOOTS = registerItem("mysterious_boots",
             new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
@@ -73,8 +77,7 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
-    public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel",
-            new ChiselItem(new Item.Settings()));
+
 
 
 
