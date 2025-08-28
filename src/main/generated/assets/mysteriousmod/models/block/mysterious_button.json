@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "mysteriousmod:block/mysterious_block"
+  }
+}

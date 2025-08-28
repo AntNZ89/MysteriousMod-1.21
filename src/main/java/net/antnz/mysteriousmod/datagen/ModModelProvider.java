@@ -28,8 +28,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_HOE_BLOCK);
 
         blockTexturePool.slab(ModBlocks.MYSTERIOUS_SLAB);
+        blockTexturePool.button(ModBlocks.MYSTERIOUS_BUTTON);
+        blockTexturePool.stairs(ModBlocks.MYSTERIOUS_STAIRS);
+        blockTexturePool.fence(ModBlocks.MYSTERIOUS_FENCE);
+        blockTexturePool.fenceGate(ModBlocks.MYSTERIOUS_FENCE_GATE);
+        blockTexturePool.pressurePlate(ModBlocks.PRESSURE_PLATE);
+        blockTexturePool.wall(ModBlocks.MYSTERIOUS_WALL);
 
 
+//        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTERIOUS_TRAPDOOR);
+//        blockStateModelGenerator.registerDoor(ModBlocks.MYSTERIOUS_DOOR);
 
 
 

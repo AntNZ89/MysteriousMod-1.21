@@ -31,15 +31,29 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYSTERIOUS_PICKAXE_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_HOE_BLOCK)
-                .add(ModBlocks.MYSTERIOUS_BLOCK)
-                .add(ModBlocks.MYSTERIOUS_SLAB);
+                .add(ModBlocks.MYSTERIOUS_BLOCK);
+
 
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYSTERIOUS_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
-        getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(ModBlocks.MYSTERIOUS_SLAB);
+
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.MYSTERIOUS_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.MYSTERIOUS_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.MYSTERIOUS_WALL);
+
+
+
+
+
+
 
 
 

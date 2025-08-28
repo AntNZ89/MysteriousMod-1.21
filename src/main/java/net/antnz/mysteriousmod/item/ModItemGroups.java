@@ -41,6 +41,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYSTERIOUS_LAMP_BLOCK);
 
                         entries.add(ModBlocks.MYSTERIOUS_SLAB);
+                        entries.add(ModBlocks.MYSTERIOUS_BUTTON);
+                        entries.add(ModBlocks.MYSTERIOUS_FENCE);
+                        entries.add(ModBlocks.MYSTERIOUS_FENCE_GATE);
+                        entries.add(ModBlocks.PRESSURE_PLATE);
+                        entries.add(ModBlocks.MYSTERIOUS_STAIRS);
+                        entries.add(ModBlocks.MYSTERIOUS_WALL);
+//                        entries.add(ModBlocks.MYSTERIOUS_DOOR);
+//                        entries.add(ModBlocks.MYSTERIOUS_TRAPDOOR);
 
                     })
                     .build());
