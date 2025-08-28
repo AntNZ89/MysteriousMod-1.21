@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks{
 
+    public static final Block MYSTERIOUS_BLOCK = registerBlock("mysterious_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
     public static final Block MYSTERIOUS_SWORD_BLOCK = registerBlock("mysterious_sword_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
@@ -27,7 +28,7 @@ public class ModBlocks{
     public static final Block MYSTERIOUS_LAMP_BLOCK = registerBlock("mysterious_lamp_block",
             new LampBlock(AbstractBlock.Settings.create().luminance(state-> state.get(LampBlock.CLICKED)?15:0)));
 
-    public static final Block MYSTERIOUS_SLAB = registerBlock("mysterious_slab", new SlabBlock(AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_SLAB = registerBlock("mysterious_slab", new SlabBlock(AbstractBlock.Settings.create().requiresTool()));
 
 
 

@@ -18,7 +18,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
 
-
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYSTERIOUS_SWORD_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_AXE_BLOCK)
@@ -26,14 +25,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_HOE_BLOCK);
 
-
-
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MYSTERIOUS_SWORD_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_AXE_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_PICKAXE_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK)
-                .add(ModBlocks.MYSTERIOUS_HOE_BLOCK);
+                .add(ModBlocks.MYSTERIOUS_HOE_BLOCK)
+                .add(ModBlocks.MYSTERIOUS_BLOCK)
+                .add(ModBlocks.MYSTERIOUS_SLAB);
 
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYSTERIOUS_TOOL)
