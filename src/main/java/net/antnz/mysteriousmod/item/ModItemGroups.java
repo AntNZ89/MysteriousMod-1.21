@@ -40,6 +40,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYSTERIOUS_SWORD_BLOCK);
                         entries.add(ModBlocks.MYSTERIOUS_LAMP_BLOCK);
 
+                        entries.add(ModBlocks.MYSTERIOUS_SLAB);
+
                     })
                     .build());
 

@@ -18,12 +18,22 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
+        BlockStateModelGenerator.BlockTexturePool blockTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MYSTERIOUS_AXE_BLOCK);
+
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_SWORD_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_AXE_BLOCK);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_AXE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_PICKAXE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_HOE_BLOCK);
+
+        blockTexturePool.slab(ModBlocks.MYSTERIOUS_SLAB);
+
+
+
+
+
+
 
         Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.MYSTERIOUS_LAMP_BLOCK, blockStateModelGenerator.modelCollector);
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.MYSTERIOUS_LAMP_BLOCK, "_on", Models.CUBE_ALL, TextureMap::all);

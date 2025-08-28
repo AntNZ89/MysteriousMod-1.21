@@ -4,6 +4,7 @@ import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -25,6 +26,9 @@ public class ModBlocks{
 
     public static final Block MYSTERIOUS_LAMP_BLOCK = registerBlock("mysterious_lamp_block",
             new LampBlock(AbstractBlock.Settings.create().luminance(state-> state.get(LampBlock.CLICKED)?15:0)));
+
+    public static final Block MYSTERIOUS_SLAB = registerBlock("mysterious_slab", new SlabBlock(AbstractBlock.Settings.create()));
+
 
 
 

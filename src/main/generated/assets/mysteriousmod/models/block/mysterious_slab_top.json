@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "mysteriousmod:block/mysterious_axe_block",
+    "side": "mysteriousmod:block/mysterious_axe_block",
+    "top": "mysteriousmod:block/mysterious_axe_block"
+  }
+}
