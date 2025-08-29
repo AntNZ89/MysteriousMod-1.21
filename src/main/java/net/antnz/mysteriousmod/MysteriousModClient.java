@@ -9,8 +9,9 @@ public class MysteriousModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
+        MysteriousMod.LOGGER.info("------------------- WORKING -------------- WORKING -----------------");
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());
-
     }
 }

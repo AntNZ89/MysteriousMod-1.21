@@ -21,7 +21,7 @@
 		"fabric-datagen": [
 			"net.antnz.mysteriousmod.MysteriousModDataGenerator"
 		],
-		"cleint": [
+		"client": [
 			"net.antnz.mysteriousmod.MysteriousModClient"
 
 
