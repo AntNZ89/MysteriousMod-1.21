@@ -24,6 +24,13 @@
   "block.mysteriousmod.mysterious_hoe_block": "Mysterious Hoe Block",
   "block.mysteriousmod.mysterious_lamp_block": "Mysterious Lamp Block",
   "block.mysteriousmod.mysterious_slab": "Mysterious Slab",
+  "block.mysteriousmod.mysterious_stairs": "Mysterious Stairs",
+  "block.mysteriousmod.mysterious_button": "Mysterious Button",
+  "block.mysteriousmod.mysterious_pressure_plate": "Mysterious Pressure Plate",
+  "block.mysteriousmod.mysterious_fence": "Mysterious Fence",
+  "block.mysteriousmod.mysterious_fence_gate": "Mysterious Fence Gate",
+  "block.mysteriousmod.mysterious_wall": "Mysterious Wall",
+
 
   "itemgorup.mysteriousmod.mysterious_items": "Mysterious Items",
   "itemgroup.mysteriousmod.mysterious_blocks": "Mysterious Blocks"

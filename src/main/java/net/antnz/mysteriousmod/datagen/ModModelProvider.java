@@ -36,8 +36,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockTexturePool.wall(ModBlocks.MYSTERIOUS_WALL);
 
 
-//        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTERIOUS_TRAPDOOR);
-//        blockStateModelGenerator.registerDoor(ModBlocks.MYSTERIOUS_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTERIOUS_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MYSTERIOUS_DOOR);
 
 
 

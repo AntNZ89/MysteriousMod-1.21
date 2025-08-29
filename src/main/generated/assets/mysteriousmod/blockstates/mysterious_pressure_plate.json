@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "mysteriousmod:block/mysterious_pressure_plate"
+    },
+    "powered=true": {
+      "model": "mysteriousmod:block/mysterious_pressure_plate_down"
+    }
+  }
+}

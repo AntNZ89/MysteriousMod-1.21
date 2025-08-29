@@ -28,21 +28,21 @@ public class ModBlocks{
 
     public static final Block MYSTERIOUS_SLAB = registerBlock("mysterious_slab", new SlabBlock(AbstractBlock.Settings.create()));
 
-    public static final Block MYSTERIOUS_STAIRS = registerBlock("mysterious_staris", new StairsBlock(ModBlocks.MYSTERIOUS_BLOCK.getDefaultState(), AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_STAIRS = registerBlock("mysterious_stairs", new StairsBlock(ModBlocks.MYSTERIOUS_BLOCK.getDefaultState(), AbstractBlock.Settings.create()));
 
-//    public static final Block MYSTERIOUS_TRAPDOOR = registerBlock("mysterious_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_TRAPDOOR = registerBlock("mysterious_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
 
-    public static final Block PRESSURE_PLATE = registerBlock("pressure_plate", new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create()));
+    public static final Block PRESSURE_PLATE = registerBlock("mysterious_pressure_plate", new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create()));
 
     public static final Block MYSTERIOUS_FENCE = registerBlock("mysterious_fence", new FenceBlock(AbstractBlock.Settings.create()));
 
     public static final Block MYSTERIOUS_FENCE_GATE = registerBlock("mysterious_fence_gate", new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.create()));
 
-    public static final Block MYSTERIOUS_WALL = registerBlock("mysterious_wall", new WallBlock(AbstractBlock.Settings.create().requiresTool()));
+    public static final Block MYSTERIOUS_WALL = registerBlock("mysterious_wall", new WallBlock(AbstractBlock.Settings.create().requiresTool().nonOpaque()));
 
     public static final Block MYSTERIOUS_BUTTON = registerBlock("mysterious_button", new ButtonBlock(BlockSetType.IRON, 10, AbstractBlock.Settings.create()));
 
-//    public static final Block MYSTERIOUS_DOOR = registerBlock("mysterious_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create()));
+    public static final Block MYSTERIOUS_DOOR = registerBlock("mysterious_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create()));
 
 
 
