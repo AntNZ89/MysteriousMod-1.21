@@ -47,8 +47,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PRESSURE_PLATE);
                         entries.add(ModBlocks.MYSTERIOUS_STAIRS);
                         entries.add(ModBlocks.MYSTERIOUS_WALL);
-//                        entries.add(ModBlocks.MYSTERIOUS_DOOR);
-//                        entries.add(ModBlocks.MYSTERIOUS_TRAPDOOR);
+                        entries.add(ModBlocks.MYSTERIOUS_DOOR);
+                       entries.add(ModBlocks.MYSTERIOUS_TRAPDOOR);
 
                     })
                     .build());

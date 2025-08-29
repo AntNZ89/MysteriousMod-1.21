@@ -22,5 +22,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MYSTERIOUS_SWORD_BLOCK, oreDrops(ModBlocks.MYSTERIOUS_SWORD_BLOCK, ModItems.MYSTERIOUS_SWORD));
         addDrop(ModBlocks.MYSTERIOUS_AXE_BLOCK, oreDrops(ModBlocks.MYSTERIOUS_AXE_BLOCK, ModItems.MYSTERIOUS_AXE));
 
+        addDrop(ModBlocks.MYSTERIOUS_STAIRS);
+        addDrop(ModBlocks.MYSTERIOUS_BUTTON);
+        addDrop(ModBlocks.PRESSURE_PLATE);
+        addDrop(ModBlocks.MYSTERIOUS_BLOCK);
+        addDrop(ModBlocks.MYSTERIOUS_TRAPDOOR);
+        addDrop(ModBlocks.MYSTERIOUS_FENCE);
+        addDrop(ModBlocks.MYSTERIOUS_FENCE_GATE);
+        addDrop(ModBlocks.MYSTERIOUS_WALL);
+
+        addDrop(ModBlocks.MYSTERIOUS_SLAB, slabDrops(ModBlocks.MYSTERIOUS_SLAB));
+        addDrop(ModBlocks.MYSTERIOUS_DOOR, doorDrops(ModBlocks.MYSTERIOUS_DOOR));
+
+
     }
 }
