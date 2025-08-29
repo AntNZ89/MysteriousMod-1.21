@@ -42,9 +42,9 @@ public class ModBlocks{
 
 
 
-    public static final Block MYSTERIOUS_TRAPDOOR = registerBlock("mysterious_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
+    public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
 
-    public static final Block MYSTERIOUS_DOOR = registerBlock("mysterious_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
+    public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
 
 
 

@@ -9,8 +9,8 @@ public class MysteriousModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYSTERIOUS_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYSTERIOUS_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());
 
     }
 }

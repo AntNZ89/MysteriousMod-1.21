@@ -1,6 +1,5 @@
 package net.antnz.mysteriousmod.datagen;
 
-import com.ibm.icu.text.Normalizer2;
 import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.antnz.mysteriousmod.item.ModItems;
@@ -36,8 +35,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockTexturePool.wall(ModBlocks.MYSTERIOUS_WALL);
 
 
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTERIOUS_TRAPDOOR);
-        blockStateModelGenerator.registerDoor(ModBlocks.MYSTERIOUS_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
 
 
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_trapdoor_top",
   "textures": {
-    "texture": "mysteriousmod:block/mysterious_trapdoor"
+    "texture": "mysteriousmod:block/pink_garnet_trapdoor"
   }
 }
