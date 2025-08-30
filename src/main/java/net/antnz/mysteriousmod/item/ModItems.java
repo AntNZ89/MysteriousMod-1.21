@@ -7,14 +7,10 @@ import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-
-import java.util.List;
 
 public class ModItems {
 
@@ -55,25 +51,25 @@ public class ModItems {
             new RemoverItem(new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_CHISEL = registerItem("mysterious_chisel",
-            new ChiselItem(new Item.Settings().rarity(Rarity.EPIC)));
+            new ChiselItem(new Item.Settings().rarity(Rarity.EPIC).maxCount(1)));
 
     public static final Item MYSTERIOUS_BOOTS = registerItem("mysterious_boots",
-            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
+            new MysteriousArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_LEGGINGS = registerItem("mysterious_leggings",
-            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new MysteriousArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxCount(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_CHESTPLATE = registerItem("mysterious_chestplate",
-            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new MysteriousArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_HELMET = registerItem("mysterious_helmet",
-            new MysteriousArnorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.HELMET, new Item.Settings()
+            new MysteriousArmorItem(ModArmorMaterials.MYSTERIOUS_ARMOR_MATERIALS, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
                     .rarity(Rarity.EPIC)));
 

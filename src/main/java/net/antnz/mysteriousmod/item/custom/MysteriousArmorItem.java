@@ -15,8 +15,8 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class MysteriousArnorItem extends ArmorItem {
-    public MysteriousArnorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+public class MysteriousArmorItem extends ArmorItem {
+    public MysteriousArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
 
