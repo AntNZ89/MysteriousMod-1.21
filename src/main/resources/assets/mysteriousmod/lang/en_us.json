@@ -34,6 +34,8 @@
   "block.mysteriousmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
   "itemgorup.mysteriousmod.mysterious_items": "Mysterious Items",
-  "itemgroup.mysteriousmod.mysterious_blocks": "Mysterious Blocks"
+  "itemgroup.mysteriousmod.mysterious_blocks": "Mysterious Blocks",
+
+  "trim_material.mysteriousmod.mysterious": "Mysterious Material"
 
 }

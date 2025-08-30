@@ -43,5 +43,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.MYSTERIOUS_CHESTPLATE)
                 .add(ModItems.MYSTERIOUS_HELMET);
 
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.MYSTERIOUS_ITEM);
+
     }
 }
