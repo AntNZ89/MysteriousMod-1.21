@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod.block;
 
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.block.custom.LampBlock;
+import net.antnz.mysteriousmod.block.custom.MysteriousBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks{
 
-    public static final Block MYSTERIOUS_BLOCK = registerBlock("mysterious_block", new Block(AbstractBlock.Settings.create().requiresTool()));
+    public static final Block MYSTERIOUS_BLOCK = registerBlock("mysterious_block", new MysteriousBlock(AbstractBlock.Settings.create().requiresTool()));
 
     public static final Block MYSTERIOUS_SWORD_BLOCK = registerBlock("mysterious_sword_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 

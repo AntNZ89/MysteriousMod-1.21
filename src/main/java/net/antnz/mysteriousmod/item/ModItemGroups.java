@@ -48,7 +48,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYSTERIOUS_STAIRS);
                         entries.add(ModBlocks.MYSTERIOUS_WALL);
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
-                       entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
+                        entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
+                        entries.add(ModBlocks.MYSTERIOUS_BLOCK);
 
                     })
                     .build());

@@ -1,7 +1,8 @@
-// 1.21	2025-08-29T21:16:54.0675802	Mysterious Mod/Tags for minecraft:item
+// 1.21	2025-08-30T12:25:00.7954623	Mysterious Mod/Tags for minecraft:item
 8c7000aafc20bf613f395f6862cd8b30bf0db119 data\minecraft\tags\item\hoes.json
 5eb83f69da6297b2a751c282a3a5d132c6e7bd8f data\minecraft\tags\item\pickaxes.json
 9d2e83362624e80444ef1f3f5e18db77cc89f3be data\minecraft\tags\item\swords.json
 1481fc6c38211833b14f4c997ddafeecd8dea71c data\minecraft\tags\item\trimmable_armor.json
 35c072dc23b81a55aad72426921a33595e53c8c6 data\minecraft\tags\item\axes.json
 601caef776222ccad374608015b403830acd69bb data\minecraft\tags\item\shovels.json
+92861bbfc33718f65a6c66f4468675fa09ac162f data\mysteriousmod\tags\item\transformable.json

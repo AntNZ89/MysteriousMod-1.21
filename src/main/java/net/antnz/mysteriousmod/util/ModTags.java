@@ -35,7 +35,7 @@ public class ModTags {
 
 
 
-
+        public static final TagKey<Item> TRANSFORMABLE = register("transformable");
 
 
 
