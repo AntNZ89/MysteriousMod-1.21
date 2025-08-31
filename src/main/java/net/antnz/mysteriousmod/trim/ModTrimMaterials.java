@@ -25,7 +25,7 @@ public class ModTrimMaterials {
 
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable){
         register(registerable, MYSTERIOUS, Registries.ITEM.getEntry(ModItems.MYSTERIOUS_ITEM),
-                Style.EMPTY.withColor(TextColor.parse("#b03fe0").getOrThrow()), 1.0f);
+                Style.EMPTY.withColor(TextColor.parse("#b03fe0").getOrThrow()), 0.9f);
     }
 
 
