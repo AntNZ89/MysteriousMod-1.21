@@ -26,8 +26,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter recipeExporter) {
 
-        List<Item> itemList = List.of(ModItems.MYSTERIOUS_COAL);
-
 
 
 
@@ -90,7 +88,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MYSTERIOUS_CHISEL)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYSTERIOUS_CHISEL)
                 .pattern("isi")
                 .pattern("aph")
                 .pattern("iSi")
@@ -104,9 +102,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MYSTERIOUS_MUTTON)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MYSTERIOUS_MUTTON)
                 .input(ModItems.MYSTERIOUS_ITEM)
                 .input(Items.MUTTON)
+                .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
+                .offerTo(recipeExporter);
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_BLOCK)
+                .input(ModItems.MYSTERIOUS_ITEM, 9)
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
 
@@ -122,17 +126,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerTrapdoorRecipe(recipeExporter, ModBlocks.PINK_GARNET_TRAPDOOR, ModItems.MYSTERIOUS_ITEM);
 
 
-
-
-
-
     }
 
 
     private static void offerTrapdoorRecipe(RecipeExporter exporter, ItemConvertible output,ItemConvertible input){
         createTrapdoorRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
-
 
     private static void offerDoorRecipe(RecipeExporter exporter, ItemConvertible output ,ItemConvertible input){
         createDoorRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
@@ -154,13 +153,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static void offerButtonRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
         ShapelessRecipeJsonBuilder.create(category, output).input(input).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
-
-
-
-
-
-
-
 
 
 }

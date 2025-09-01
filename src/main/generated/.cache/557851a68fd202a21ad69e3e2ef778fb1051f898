@@ -1,4 +1,4 @@
-// 1.21	2025-09-01T18:32:16.5734582	Mysterious Mod/Recipes
+// 1.21	2025-09-01T20:15:25.6227196	Mysterious Mod/Recipes
 9e7d04fed22e4d66cff7bfa16410761c09a755be data\mysteriousmod\recipe\mysterious_pickaxe_block.json
 0ca018b3b14d26524491b8b709e9e7834fb7b31f data\mysteriousmod\recipe\mysterious_axe_block.json
 0c693f09e5ab54a9a99211603e796cafbd1ac766 data\mysteriousmod\advancement\recipes\decorations\mysterious_fence.json
@@ -6,6 +6,7 @@ aa81db464e9a3e63b8416bc45a321a59df3330ff data\mysteriousmod\recipe\mysterious_sh
 e297de5eaa63e83fc966faa4553ef8624e90a869 data\mysteriousmod\recipe\mysterious_wall.json
 d8af3d96b68d0243fc79a44fce1231e9e4fe0084 data\mysteriousmod\recipe\mysterious_mutton.json
 382932ba351bd12488f5fe480b1635f341f65fda data\mysteriousmod\advancement\recipes\redstone\mysterious_fence_gate.json
+24b216cb9a84fb348e127cba833c215f3d93b546 data\mysteriousmod\recipe\mysterious_block.json
 541bb30fcc57e97aa8227a0915302bf1b02306e3 data\mysteriousmod\recipe\mysterious_fence.json
 95b389afe5225c4083eb9a7c903207208d8947c1 data\mysteriousmod\recipe\pink_garnet_trapdoor.json
 89647a983618f601a285d3b90e590a446bb05c31 data\mysteriousmod\advancement\recipes\redstone\pink_garnet_door.json
@@ -31,5 +32,6 @@ b06da27d6b8b37f8092a4c5ab0486fd4940f3c23 data\mysteriousmod\advancement\recipes\
 a547e729650ec15c82ac3d75d232be11f7fecf12 data\mysteriousmod\advancement\recipes\misc\mysterious_hoe_block.json
 7379699af82dc38a25ba516bbb46ffdc379658fe data\mysteriousmod\advancement\recipes\misc\mysterious_shovel_block.json
 cfbe5ba39b3613c571b33453fdb8435b775d7285 data\mysteriousmod\recipe\mysterious_button.json
+db22b18be81dbcd3f2040549c57b6d953efacbee data\mysteriousmod\advancement\recipes\building_blocks\mysterious_block.json
 c8ff962cea965835d26320b28a408d35392f66fb data\mysteriousmod\advancement\recipes\redstone\pink_garnet_trapdoor.json
 17c3cc541f3fee5c05fdb1004eddca675456985d data\mysteriousmod\recipe\pink_garnet_door.json
