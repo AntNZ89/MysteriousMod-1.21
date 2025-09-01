@@ -114,8 +114,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPressurePlateRecipe(recipeExporter, ModBlocks.PRESSURE_PLATE, ModItems.MYSTERIOUS_ITEM);
 
 
+
         offerButtonRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_BUTTON, ModItems.MYSTERIOUS_ITEM);
 
+        offerFenceRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_FENCE, ModBlocks.MYSTERIOUS_BLOCK);
 
 
 
@@ -127,7 +129,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+    }
 
+
+    private static void offerFenceRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
+        createFenceRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
 
 
