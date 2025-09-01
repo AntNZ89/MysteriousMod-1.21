@@ -4,11 +4,14 @@ import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -101,15 +104,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
 
-
-
-
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MYSTERIOUS_MUTTON)
                 .input(ModItems.MYSTERIOUS_ITEM)
                 .input(Items.MUTTON)
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
+
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_SLAB, ModItems.MYSTERIOUS_ITEM);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.PRESSURE_PLATE, ModItems.MYSTERIOUS_ITEM);
+
+
+        offerButtonRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_BUTTON, ModItems.MYSTERIOUS_ITEM);
+
+
+
+
+
 
 
 
@@ -119,5 +129,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
     }
+
+
+
+    private static void offerButtonRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
+        ShapelessRecipeJsonBuilder.create(category, output).input(input).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
+
+
+
+
+
+
+
+
 
 }
