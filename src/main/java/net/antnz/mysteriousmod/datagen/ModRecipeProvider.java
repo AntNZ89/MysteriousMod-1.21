@@ -113,17 +113,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_SLAB, ModItems.MYSTERIOUS_ITEM);
         offerPressurePlateRecipe(recipeExporter, ModBlocks.PRESSURE_PLATE, ModItems.MYSTERIOUS_ITEM);
 
-
-
         offerButtonRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_BUTTON, ModItems.MYSTERIOUS_ITEM);
-
         offerFenceRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_FENCE, ModBlocks.MYSTERIOUS_BLOCK);
-
-
-
-
-
-
+        offerFenceGateRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_FENCE_GATE, ModBlocks.MYSTERIOUS_BLOCK);
+        offerStairsRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYSTERIOUS_STAIRS, ModItems.MYSTERIOUS_ITEM);
 
 
 
@@ -131,11 +124,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     }
 
+    private static void offerStairsRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
+        createStairsRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
 
     private static void offerFenceRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
         createFenceRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
 
+    private static void offerFenceGateRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
+        createFenceGateRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    }
 
 
     private static void offerButtonRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
