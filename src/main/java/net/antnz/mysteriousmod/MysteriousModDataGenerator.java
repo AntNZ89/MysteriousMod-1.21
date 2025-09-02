@@ -22,6 +22,7 @@ public class MysteriousModDataGenerator implements DataGeneratorEntrypoint {
 
 	}
 
+
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);

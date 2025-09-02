@@ -20,7 +20,6 @@ public class ModDataComponentTypes {
                 unaryOperator.apply(ComponentType.builder()).build());
     }
 
-
     public static void registerModDataComponentTypes(){
         MysteriousMod.LOGGER.info("Registering Mod Data Component Types for " + MysteriousMod.MOD_ID);
     }

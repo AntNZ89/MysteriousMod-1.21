@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 public class ModTags {
 
 
-
     public static class Blocks{
 
 
@@ -23,32 +22,21 @@ public class ModTags {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(MysteriousMod.MOD_ID, name));
         }
 
-
-
     }
-
-
 
 
 
     public static class Items{
 
 
-
         public static final TagKey<Item> TRANSFORMABLE = register("transformable");
-
 
 
         private static TagKey<Item> register(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MysteriousMod.MOD_ID, name));
         }
 
-
-
     }
-
-
-
 
 
 

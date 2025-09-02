@@ -48,19 +48,17 @@ public class ModBlocks{
     public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
 
 
-
-
-
-
-    public static Block registerBlock(String name, Block block){
+    private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MysteriousMod.MOD_ID, name), block);
     }
 
-    public static void registerBlockItem(String name, Block block){
+
+    private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(MysteriousMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
+
 
     public static void registerModBlocks(){
         MysteriousMod.LOGGER.info("Registering Blocks for " + MysteriousMod.MOD_ID);
