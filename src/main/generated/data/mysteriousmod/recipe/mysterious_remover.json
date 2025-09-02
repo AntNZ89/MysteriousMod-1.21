@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "b": {
+      "item": "minecraft:bedrock"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  b",
+    " s ",
+    "s  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysteriousmod:mysterious_remover"
+  }
+}

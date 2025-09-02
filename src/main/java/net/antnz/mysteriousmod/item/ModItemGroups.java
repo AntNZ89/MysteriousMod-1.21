@@ -3,6 +3,7 @@ package net.antnz.mysteriousmod.item;
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -13,16 +14,15 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
 
+
     public static final ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MYSTERIOUS_ITEM))
-                    .displayName(Text.translatable("itemgorup.mysteriousmod.mysterious_items"))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.MYSTERIOUS_ITEM))
+                    .displayName(Text.translatable("itemgroup.mysteriousmod.mysterious_items"))
                     .entries((displayContext, entries) -> {
-
                         entries.add(ModItems.MYSTERIOUS_ITEM);
                         entries.add(ModItems.MYSTERIOUS_MUTTON);
                         entries.add(ModItems.MYSTERIOUS_COAL);
-
                     })
                     .build());
 

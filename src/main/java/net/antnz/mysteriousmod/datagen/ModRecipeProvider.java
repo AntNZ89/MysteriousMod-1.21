@@ -4,6 +4,7 @@ import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -100,6 +101,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('i' , ModItems.MYSTERIOUS_ITEM)
                 .criterion(hasItem(ModItems.MYSTERIOUS_ITEM), conditionsFromItem(ModItems.MYSTERIOUS_ITEM))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MYSTERIOUS_REMOVER)
+                .pattern("  b")
+                .pattern(" s ")
+                .pattern("s  ")
+                .input('s', Items.STICK)
+                .input('b', Blocks.BEDROCK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
+
+
+
+
 
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MYSTERIOUS_MUTTON)
