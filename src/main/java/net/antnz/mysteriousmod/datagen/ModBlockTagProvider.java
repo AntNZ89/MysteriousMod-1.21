@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYSTERIOUS_AXE_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_PICKAXE_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_SHOVEL_BLOCK)
-                .add(ModBlocks.MYSTERIOUS_HOE_BLOCK);
+                .add(ModBlocks.MYSTERIOUS_HOE_BLOCK)
+                .add(ModBlocks.MYSTERIOUS_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MYSTERIOUS_SWORD_BLOCK)

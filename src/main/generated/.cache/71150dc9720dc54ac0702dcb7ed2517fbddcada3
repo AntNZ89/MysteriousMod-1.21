@@ -1,4 +1,4 @@
-// 1.21	2025-09-05T19:02:29.1841818	Mysterious Mod/Model Definitions
+// 1.21	2025-09-05T19:08:49.0606264	Mysterious Mod/Model Definitions
 adbd021b06b2525c214bc46cfdb4f300d55cac2f assets\mysteriousmod\models\block\mysterious_slab_top.json
 4c4404b06dbff8109b3c36c659584aeb43ce9e5f assets\mysteriousmod\models\block\mysterious_fence_gate_open.json
 08236fd21a72f5e0f60d62c13baa14c88530f038 assets\mysteriousmod\models\item\mysterious_leggings_quartz_trim.json
@@ -47,8 +47,8 @@ fcfde45708f893b5b455f5d1f5c7333195016169 assets\mysteriousmod\models\item\myster
 c441bd4ee6a85a7ddfc66309707a0db671367772 assets\mysteriousmod\models\block\mysterious_button_inventory.json
 f5265bd14df023de006c035570a5732adf3ba009 assets\mysteriousmod\models\block\mysterious_button.json
 f3a77b0cc167a644afae7d9941a1998010248080 assets\mysteriousmod\models\item\mysterious_fence_gate.json
-dd00939e201ee3555fc01838dd245be1bd5a4d53 assets\mysteriousmod\models\item\mysterious_leggings.json
 ade4203f0aa50835ad760cf140a37b5cd6bbc0a3 assets\mysteriousmod\models\item\mysterious_button.json
+dd00939e201ee3555fc01838dd245be1bd5a4d53 assets\mysteriousmod\models\item\mysterious_leggings.json
 b1306f18f906fcb6b53cd7cd1f6bd328e679251c assets\mysteriousmod\models\item\mysterious_chestplate_amethyst_trim.json
 1fd3eb63e93a07479af7b97d1ffe76ff227ceb55 assets\mysteriousmod\blockstates\mysterious_shovel_block.json
 3105266a856cd414207e8896a4b6069760a84da4 assets\mysteriousmod\models\item\pink_garnet_door.json
