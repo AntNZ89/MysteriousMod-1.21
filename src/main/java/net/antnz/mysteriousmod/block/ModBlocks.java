@@ -25,7 +25,7 @@ public class ModBlocks{
     public static final Block MYSTERIOUS_HOE_BLOCK = registerBlock("mysterious_hoe_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
     public static final Block MYSTERIOUS_LAMP_BLOCK = registerBlock("mysterious_lamp_block",
-            new LampBlock(AbstractBlock.Settings.create().luminance(state-> state.get(LampBlock.CLICKED)?15:0)));
+            new LampBlock(AbstractBlock.Settings.create().luminance(state-> state.get(LampBlock.CLICKED)? 15:0)));
 
     public static final Block MYSTERIOUS_SLAB = registerBlock("mysterious_slab", new SlabBlock(AbstractBlock.Settings.create()));
 

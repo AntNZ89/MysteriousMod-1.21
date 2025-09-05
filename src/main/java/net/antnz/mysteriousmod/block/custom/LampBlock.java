@@ -43,7 +43,7 @@ public class LampBlock extends Block {
 
         if (world instanceof ServerWorld){
             BlockState blockState = state.cycle(CLICKED);
-            world.setBlockState(pos, state.cycle(CLICKED));
+            world.setBlockState(pos, blockState);
             world.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS, 1, 1);
 
             if (blockState.get(CLICKED)){
