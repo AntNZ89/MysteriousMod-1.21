@@ -1,7 +1,7 @@
 {
   "asset_name": "mysterious",
   "description": {
-    "color": "#0FFFFF",
+    "color": "#FFFFFF",
     "translate": "trim_material.mysteriousmod.mysterious"
   },
   "ingredient": "mysteriousmod:mysterious_item",

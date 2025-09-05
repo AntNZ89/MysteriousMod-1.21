@@ -21,10 +21,9 @@ public class ModTrimMaterials {
     public static final RegistryKey<ArmorTrimMaterial> MYSTERIOUS = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious"));
 
-
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable){
         register(registerable, MYSTERIOUS, Registries.ITEM.getEntry(ModItems.MYSTERIOUS_ITEM),
-                Style.EMPTY.withColor(TextColor.parse("#FFFFF").getOrThrow()), 0.9f);
+                Style.EMPTY.withColor(TextColor.parse("#FFFFFF").getOrThrow()), 0.9f);
     }
 
 

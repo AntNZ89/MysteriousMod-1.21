@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mysteriousmod:item/mysterious_chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "mysteriousmod:used": 1
+      },
+      "model": "mysteriousmod:item/mysterious_chisel_used"
+    }
+  ]
+}

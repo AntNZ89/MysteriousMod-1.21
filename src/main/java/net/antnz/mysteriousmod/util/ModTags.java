@@ -12,11 +12,8 @@ public class ModTags {
 
     public static class Blocks{
 
-
-
         public static final TagKey<Block> INCORRECT_FOR_MYSTERIOUS_TOOL = register("incorrect_for_mysterious_tool");
         public static final TagKey<Block> NEEDS_MYSTERIOUS_TOOL = register("needs_mysterious_tool");
-
 
         private static TagKey<Block> register(String name){
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(MysteriousMod.MOD_ID, name));
@@ -25,19 +22,15 @@ public class ModTags {
     }
 
 
-
     public static class Items{
 
-
         public static final TagKey<Item> TRANSFORMABLE = register("transformable");
-
 
         private static TagKey<Item> register(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MysteriousMod.MOD_ID, name));
         }
 
     }
-
 
 
 }

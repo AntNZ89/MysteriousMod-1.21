@@ -58,14 +58,12 @@ public class ChiselItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
 
-        if (Screen.hasShiftDown() && stack.get(ModDataComponentTypes.COORDINATES) != null){
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null){
             tooltip.add(Text.literal("Block at X = " + stack.get(ModDataComponentTypes.COORDINATES).getX() +
                     ", Y = " + stack.get(ModDataComponentTypes.COORDINATES).getY() +
                     ", Z = " + stack.get(ModDataComponentTypes.COORDINATES).getZ() + " is now a lamp"));
         }
-        else {
-            tooltip.add(Text.literal("press SHIFT"));
-        }
+        
         super.appendTooltip(stack, context, tooltip, type);
     }
 }
