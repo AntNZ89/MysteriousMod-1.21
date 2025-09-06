@@ -17,7 +17,7 @@ public class ModItemGroups {
     public static final ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MYSTERIOUS_ITEM))
-                    .displayName(Text.translatable("itemgorup.mysteriousmod.mysterious_items"))
+                    .displayName(Text.literal("Mysterious Items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MYSTERIOUS_ITEM);
                         entries.add(ModItems.MYSTERIOUS_MUTTON);
