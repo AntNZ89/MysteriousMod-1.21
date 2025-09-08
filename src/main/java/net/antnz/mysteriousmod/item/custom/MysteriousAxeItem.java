@@ -28,7 +28,6 @@ import java.util.Optional;
 
 public class MysteriousAxeItem extends AxeItem {
 
-//    List<Block> blockList = List.of(Blocks.WO);
 
     public MysteriousAxeItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);

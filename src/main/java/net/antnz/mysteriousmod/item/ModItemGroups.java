@@ -64,6 +64,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MYSTERIOUS_SWORD);
                         entries.add(ModItems.MYSTERIOUS_PICKAXE);
                         entries.add(ModItems.MYSTERIOUS_AXE);
+                        entries.add(ModItems.MYSTERIOUS_BOW);
                         entries.add(ModItems.MYSTERIOUS_SHOVEL);
                         entries.add(ModItems.MYSTERIOUS_HOE);
                         entries.add(ModItems.MYSTERIOUS_CHISEL);
