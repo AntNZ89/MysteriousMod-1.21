@@ -1,6 +1,6 @@
-// 1.21	2025-09-08T19:47:57.8362918	Mysterious Mod/Tags for minecraft:block
-5b61369d86655208b8761cda0d7ffe65fb4cbf55 data\minecraft\tags\block\needs_iron_tool.json
+// 1.21	2025-09-09T20:54:08.1942825	Mysterious Mod/Tags for minecraft:block
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\mysteriousmod\tags\block\needs_mysterious_tool.json
+5b61369d86655208b8761cda0d7ffe65fb4cbf55 data\minecraft\tags\block\needs_iron_tool.json
 436b456d4c36c30532635ee660da0b4075d8a729 data\minecraft\tags\block\walls.json
 575b048f3f08cb4753f5d0d3c288c7475003a6a8 data\minecraft\tags\block\fences.json
 62e52ee3000a2f9d43ee868135bbef7d6e460332 data\minecraft\tags\block\fence_gates.json
