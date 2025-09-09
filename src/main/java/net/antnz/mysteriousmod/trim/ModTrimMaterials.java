@@ -25,7 +25,6 @@ public class ModTrimMaterials {
                 Style.EMPTY.withColor(TextColor.parse("#FFFFFF").getOrThrow()), 0.9f);
     }
 
-
     private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> registryKey,
                                  RegistryEntry<Item> item, Style style, float index){
 

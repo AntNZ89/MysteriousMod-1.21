@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModModelPredicates {
 
+
     public static void registerModelPredicates(){
         ModelPredicateProviderRegistry.register(ModItems.MYSTERIOUS_CHISEL, Identifier.of(MysteriousMod.MOD_ID, "used"),
                 (stack, world, entity, seed) -> stack.get(ModDataComponentTypes.COORDINATES) != null? 1f : 0f);
@@ -21,7 +22,6 @@ public class ModModelPredicates {
     }
 
     private static void registerCustomBow(Item item){
-
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pull"), (stack, world, entity, seed) -> {
             if (entity == null) {
                 return 0.0F;
@@ -31,7 +31,9 @@ public class ModModelPredicates {
         });
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F);
 
-
     }
+
+
+
 
 }
