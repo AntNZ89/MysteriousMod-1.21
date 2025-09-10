@@ -18,7 +18,6 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider{
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.TRIM_MATERIAL));
     }
 
-
     @Override
     public String getName() {
         return "";

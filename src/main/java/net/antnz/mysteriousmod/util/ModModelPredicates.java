@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
 public class ModModelPredicates {
@@ -18,10 +19,11 @@ public class ModModelPredicates {
                 (stack, world, entity, seed) -> stack.get(ModDataComponentTypes.COORDINATES) != null? 1f : 0f);
 
         registerCustomBow(ModItems.MYSTERIOUS_BOW);
-
     }
 
+
     private static void registerCustomBow(Item item){
+
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pull"), (stack, world, entity, seed) -> {
             if (entity == null) {
                 return 0.0F;
@@ -31,9 +33,9 @@ public class ModModelPredicates {
         });
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F);
 
+
+
     }
-
-
 
 
 }
