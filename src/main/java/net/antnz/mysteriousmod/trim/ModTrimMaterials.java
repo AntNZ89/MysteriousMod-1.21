@@ -22,7 +22,7 @@ public class ModTrimMaterials {
 
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable){
         register(registerable, MYSTERIOUS, Registries.ITEM.getEntry(ModItems.MYSTERIOUS_ITEM),
-                Style.EMPTY.withColor(TextColor.parse("#FFFFFFF").getOrThrow()), 0.9f);
+                Style.EMPTY.withColor(TextColor.parse("#FFFFFF").getOrThrow()), 0.9f);
     }
 
     private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> registryKey,
