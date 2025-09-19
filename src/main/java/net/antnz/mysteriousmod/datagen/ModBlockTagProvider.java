@@ -35,7 +35,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MYSTERIOUS_BLOCK);
 
 
-
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_MYSTERIOUS_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
