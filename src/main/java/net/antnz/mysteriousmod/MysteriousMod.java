@@ -41,10 +41,10 @@ public class MysteriousMod implements ModInitializer {
 					mob.setHealth(0f);
 
 					if (isVow(mob.getName().getString().charAt(0))){
-						playerEntity.sendMessage(Text.literal("-You made an " + mob.getName().getString() + " disappear!-"));
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() +  " made an " + mob.getName().getString() + " disappear!"));
 					}
 					else {
-						playerEntity.sendMessage(Text.literal("-You made a " + mob.getName().getString() + " disappear!-"));
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() +  " made a " + mob.getName().getString() + " disappear!"));
 					}
 
 				}
