@@ -39,14 +39,26 @@ public class MysteriousMod implements ModInitializer {
 				if (playerEntity.getMainHandStack().getItem() == ModItems.MYSTERIOUS_CHISEL){
 					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20));
 					mob.setHealth(0f);
-					playerEntity.sendMessage(Text.literal("-You made a " + mob.getName().getString() + " disappear!-"));
+
+					if (isVow(mob.getName().getString().charAt(0))){
+						playerEntity.sendMessage(Text.literal("-You made an " + mob.getName().getString() + " disappear!-"));
+					}
+					else {
+						playerEntity.sendMessage(Text.literal("-You made a " + mob.getName().getString() + " disappear!-"));
+					}
+
 				}
 				return ActionResult.PASS;
 			}
 			return ActionResult.SUCCESS;
 		});
 
-
-
 	}
+
+
+	private static boolean isVow(char c){
+		return c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+	}
+
+
 }
