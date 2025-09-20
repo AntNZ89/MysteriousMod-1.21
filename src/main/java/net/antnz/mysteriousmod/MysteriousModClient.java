@@ -1,10 +1,17 @@
 package net.antnz.mysteriousmod;
 
 import net.antnz.mysteriousmod.block.ModBlocks;
+import net.antnz.mysteriousmod.item.ModItems;
 import net.antnz.mysteriousmod.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 
 public class MysteriousModClient implements ClientModInitializer {
     @Override
@@ -14,6 +21,8 @@ public class MysteriousModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());
 
         ModModelPredicates.registerModelPredicates();
+
+
 
     }
 }

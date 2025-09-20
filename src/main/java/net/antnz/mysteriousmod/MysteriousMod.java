@@ -6,6 +6,15 @@ import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +34,17 @@ public class MysteriousMod implements ModInitializer {
 		ModItems.registerFuel();
 
 
-
+		UseEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
+			if (entity instanceof MobEntity mob && world instanceof ServerWorld){
+				if (playerEntity.getMainHandStack().getItem() == ModItems.MYSTERIOUS_CHISEL){
+					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20));
+					mob.setHealth(0f);
+					playerEntity.sendMessage(Text.literal("-You made a " + mob.getName().getString() + " disappear!-"));
+				}
+				return ActionResult.PASS;
+			}
+			return ActionResult.SUCCESS;
+		});
 
 
 
