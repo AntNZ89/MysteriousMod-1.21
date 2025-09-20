@@ -42,8 +42,6 @@ public class MysteriousMod implements ModInitializer {
 					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 200));
 					mob.remove(Entity.RemovalReason.KILLED);
 
-
-
 					if (isVow(mob.getName().getString().charAt(0))){
 						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() +  " made an " + mob.getName().getString() + " disappear!"));
 					}
