@@ -37,18 +37,19 @@ public class MysteriousMod implements ModInitializer {
 
 
 		UseEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
-			if (entity instanceof MobEntity mob && world instanceof ServerWorld){
+			if (world instanceof ServerWorld && entity instanceof MobEntity mob){
 				if (playerEntity.getMainHandStack().getItem() == ModItems.MYSTERIOUS_CHISEL){
-					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 200));
+
+					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY));
 					mob.remove(Entity.RemovalReason.KILLED);
 
 					if (isVow(mob.getName().getString().charAt(0))){
-						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() +  " made an " + mob.getName().getString() + " disappear!"));
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made an " + mob.getName().getString() + " \"disappear\""));
 					}
 					else {
-						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() +  " made a " + mob.getName().getString() + " disappear!"));
-					}
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made a " + mob.getName().getString() + " \"disappear\""));
 
+					}
 				}
 				return ActionResult.PASS;
 			}
