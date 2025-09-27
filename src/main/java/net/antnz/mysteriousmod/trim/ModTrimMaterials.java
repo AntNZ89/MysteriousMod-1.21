@@ -17,20 +17,19 @@ import java.util.Map;
 
 public class ModTrimMaterials {
 
+
     public static final RegistryKey<ArmorTrimMaterial> MYSTERIOUS = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious"));
-
 
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable){
         register(registerable, MYSTERIOUS, Registries.ITEM.getEntry(ModItems.MYSTERIOUS_ITEM),
                 Style.EMPTY.withColor(TextColor.parse("#FFFFFF").getOrThrow()), 0.9f);
     }
 
+    private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> registryKey,
+                                 RegistryEntry<Item> item, Style style, float index){
 
-    public static void register (Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> registryKey,
-                                 RegistryEntry<Item> itemRegistryEntry ,Style style, float index){
-
-        ArmorTrimMaterial armorTrimMaterial = new ArmorTrimMaterial(registryKey.getValue().getPath(), itemRegistryEntry, index, Map.of(),
+        ArmorTrimMaterial armorTrimMaterial = new ArmorTrimMaterial(registryKey.getValue().getPath(), item, index, Map.of(),
                 Text.translatable(Util.createTranslationKey("trim_material", registryKey.getValue())).fillStyle(style));
 
         registerable.register(registryKey, armorTrimMaterial);
