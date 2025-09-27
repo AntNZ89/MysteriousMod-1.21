@@ -30,7 +30,6 @@ public class ModArmorMaterials {
                     List.of(new ArmorMaterial.Layer(Identifier.of(MysteriousMod.MOD_ID, "mysterious"))),0,0));
 
 
-
     private static RegistryEntry<ArmorMaterial> registryEntry(String name, Supplier<ArmorMaterial> materialSupplier){
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MysteriousMod.MOD_ID, name), materialSupplier.get());
     }
