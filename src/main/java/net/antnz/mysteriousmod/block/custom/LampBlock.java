@@ -35,7 +35,7 @@ public class LampBlock extends Block {
 
     public LampBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(CLICKED, true));
+        this.setDefaultState(getDefaultState().with(CLICKED, true));
     }
 
     @Override
@@ -77,7 +77,6 @@ public class LampBlock extends Block {
 
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
-
         if (Screen.hasShiftDown()){
             tooltip.add(Text.literal("You will definitely only be able to §2win a lot of levels"));
         }

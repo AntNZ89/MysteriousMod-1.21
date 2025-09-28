@@ -4,6 +4,7 @@ import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.component.ModDataComponentTypes;
 import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
+import net.antnz.mysteriousmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
@@ -34,13 +35,14 @@ public class MysteriousMod implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 		ModDataComponentTypes.registerModDataComponentTypes();
 		ModItems.registerFuel();
+		ModSounds.registerModSounds();
 
 
 		UseEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
 			if (world instanceof ServerWorld && entity instanceof MobEntity mob){
 				if (playerEntity.getMainHandStack().getItem() == ModItems.MYSTERIOUS_CHISEL){
 
-					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY));
+					mob.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20));
 					mob.remove(Entity.RemovalReason.KILLED);
 
 					if (isVow(mob.getName().getString().charAt(0))){

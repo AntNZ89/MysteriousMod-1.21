@@ -13,7 +13,7 @@ public class ModDataComponentTypes {
 
     public static final ComponentType<BlockPos> COORDINATES = register("coordinates", blockPosBuilder -> blockPosBuilder.codec(BlockPos.CODEC));
 
-    public static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderUnaryOperator){
+    private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderUnaryOperator){
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(MysteriousMod.MOD_ID, name),
                 builderUnaryOperator.apply(ComponentType.builder()).build());
     }

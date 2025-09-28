@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.mysteriousmod.chisel_use",
+    "sounds": [
+      "mysteriousmod:chisel_use"
+    ]
+  },
+  "mysterious_block_break": {
+    "subtitle": "sounds.mysteriousmod.mysterious_block_break",
+    "sounds": [
+      "mysteriousmod:mysterious_block_break"
+    ]
+  },
+  "mysterious_block_fall": {
+    "subtitle": "sounds.mysteriousmod.mysterious_block_fall",
+    "sounds": [
+      "mysteriousmod:mysterious_block_fall"
+    ]
+  },
+  "mysterious_block_hit": {
+    "subtitle": "sounds.mysteriousmod.mysterious_block_hit",
+    "sounds": [
+      "mysteriousmod:mysterious_block_hit"
+    ]
+  },
+  "mysterious_block_place": {
+    "subtitle": "sounds.mysteriousmod.mysterious_block_place",
+    "sounds": [
+      "mysteriousmod:mysterious_block_place"
+    ]
+  },
+  "mysterious_block_step": {
+    "subtitle": "sounds.mysteriousmod.mysterious_block_step",
+    "sounds": [
+      "mysteriousmod:mysterious_block_step"
+    ]
+  }
+}

@@ -3,6 +3,7 @@ package net.antnz.mysteriousmod.block;
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.block.custom.LampBlock;
 import net.antnz.mysteriousmod.block.custom.MysteriousBlock;
+import net.antnz.mysteriousmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks{
 
-    public static final Block MYSTERIOUS_BLOCK = registerBlock("mysterious_block", new MysteriousBlock(AbstractBlock.Settings.create().requiresTool()));
+    public static final Block MYSTERIOUS_BLOCK = registerBlock("mysterious_block", new MysteriousBlock(AbstractBlock.Settings.create().requiresTool().sounds(ModSounds.MYSTERIOUS_SOUNDS)));
 
     public static final Block MYSTERIOUS_SWORD_BLOCK = registerBlock("mysterious_sword_block", new Block(AbstractBlock.Settings.create().requiresTool()));
 
@@ -41,11 +42,10 @@ public class ModBlocks{
 
     public static final Block MYSTERIOUS_BUTTON = registerBlock("mysterious_button", new ButtonBlock(BlockSetType.IRON, 10, AbstractBlock.Settings.create()));
 
-
-
     public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
 
     public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque()));
+
 
 
     private static Block registerBlock(String name, Block block){
@@ -53,12 +53,10 @@ public class ModBlocks{
         return Registry.register(Registries.BLOCK, Identifier.of(MysteriousMod.MOD_ID, name), block);
     }
 
-
     private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(MysteriousMod.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
-
 
     public static void registerModBlocks(){
         MysteriousMod.LOGGER.info("Registering Blocks for " + MysteriousMod.MOD_ID);

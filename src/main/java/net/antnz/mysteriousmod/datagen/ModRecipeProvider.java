@@ -27,9 +27,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter recipeExporter) {
 
-
-
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MYSTERIOUS_SWORD_BLOCK)
                 .pattern("lcl")
                 .pattern("lcl")
@@ -112,10 +109,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
 
-
-
-
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MYSTERIOUS_MUTTON)
                 .input(ModItems.MYSTERIOUS_ITEM)
                 .input(Items.MUTTON)
@@ -143,8 +136,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
 
-    private static void offerTrapdoorRecipe(RecipeExporter exporter, ItemConvertible output,ItemConvertible input){
-        createTrapdoorRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
+    private static void offerTrapdoorRecipe(RecipeExporter recipeExporter, ItemConvertible output, ItemConvertible input){
+        createTrapdoorRecipe(output, Ingredient.ofItems(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(recipeExporter);
     }
 
     private static void offerDoorRecipe(RecipeExporter exporter, ItemConvertible output ,ItemConvertible input){
@@ -162,7 +155,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static void offerFenceGateRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input){
         createFenceGateRecipe(output, Ingredient.ofItems(new ItemConvertible[]{input})).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
     }
-
 
     private static void offerButtonRecipe(RecipeExporter exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input){
         ShapelessRecipeJsonBuilder.create(category, output).input(input).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);

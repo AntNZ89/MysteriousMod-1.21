@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod.item.custom;
 
 import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.component.ModDataComponentTypes;
+import net.antnz.mysteriousmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -17,6 +18,7 @@ import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -53,8 +55,7 @@ public class ChiselItem extends Item {
 
                 world.setBlockState(pos, ModBlocks.MYSTERIOUS_LAMP_BLOCK.getDefaultState());
 
-                context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
-                        item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+                world.playSound(null, pos, ModSounds.CHISEL_USE, SoundCategory.BLOCKS, 2f, 1f);
 
             }
         }
