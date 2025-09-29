@@ -74,7 +74,7 @@ public class ModItems {
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_BOW = registerItem("mysterious_bow",
-            new MysteriousBowItem(new Item.Settings().maxDamage(100)));
+            new MysteriousBowItem(new Item.Settings().maxDamage(10)));
 
 
     private static Item registerItem(String name, Item item){

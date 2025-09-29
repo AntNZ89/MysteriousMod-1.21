@@ -46,10 +46,10 @@ public class MysteriousMod implements ModInitializer {
 					mob.remove(Entity.RemovalReason.KILLED);
 
 					if (isVow(mob.getName().getString().charAt(0))){
-						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made an " + mob.getName().getString() + " \"disappear\""));
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made an " + mob.getName().getString() + " disappear"));
 					}
 					else {
-						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made a " + mob.getName().getString() + " \"disappear\""));
+						playerEntity.sendMessage(Text.literal(playerEntity.getName().getString() + " Made a " + mob.getName().getString() + " disappear"));
 
 					}
 				}
@@ -60,10 +60,8 @@ public class MysteriousMod implements ModInitializer {
 
 	}
 
-
 	private static boolean isVow(char c){
 		return c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
 	}
-
 
 }
