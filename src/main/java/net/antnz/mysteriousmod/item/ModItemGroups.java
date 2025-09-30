@@ -14,17 +14,16 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
 
-    public static final ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
+    public static ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MYSTERIOUS_ITEM))
-                    .displayName(Text.literal("itemgroup.mysteriousmod.mysterious_items"))
+                    .displayName(Text.translatable("itemgroup.mysteriousmod.mysterious_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MYSTERIOUS_ITEM);
                         entries.add(ModItems.MYSTERIOUS_MUTTON);
                         entries.add(ModItems.MYSTERIOUS_COAL);
                     })
                     .build());
-
 
 
     public static final ItemGroup MYSTERIOUS_BLOCKS = Registry.register(Registries.ITEM_GROUP,
