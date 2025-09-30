@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 public class ModSounds {
 
     public static final SoundEvent CHISEL_USE = registerSound("chisel_use");
-
     public static final SoundEvent MYSTERIOUS_BLOCK_BREAK = registerSound("mysterious_block_break");
     public static final SoundEvent MYSTERIOUS_BLOCK_FALL = registerSound("mysterious_block_fall");
     public static final SoundEvent MYSTERIOUS_BLOCK_HIT = registerSound("mysterious_block_hit");
@@ -24,6 +23,7 @@ public class ModSounds {
         Identifier id = Identifier.of(MysteriousMod.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
+
 
     public static void registerModSounds(){
         MysteriousMod.LOGGER.info("Registering Sounds for " + MysteriousMod.MOD_ID);

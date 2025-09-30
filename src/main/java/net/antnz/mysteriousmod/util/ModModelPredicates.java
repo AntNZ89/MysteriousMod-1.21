@@ -18,9 +18,10 @@ public class ModModelPredicates {
         ModelPredicateProviderRegistry.register(ModItems.MYSTERIOUS_CHISEL, Identifier.of(MysteriousMod.MOD_ID, "used"),
                 (stack, world, entity, seed) -> stack.get(ModDataComponentTypes.COORDINATES) != null? 1f : 0f);
 
+        registerBow(ModItems.MYSTERIOUS_BOW);
     }
 
-    private static void registerBow(Item item){
+    public static void registerBow(Item item){
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pull"), (stack, world, entity, seed) -> {
             if (entity == null) {
                 return 0.0F;

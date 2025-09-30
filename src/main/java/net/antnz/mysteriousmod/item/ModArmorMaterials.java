@@ -18,7 +18,6 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
 
-
     public static final RegistryEntry<ArmorMaterial> MYSTERIOUS_ARMOR_MATERIALS = registryEntry("mysterious",
             ()-> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), typeIntegerEnumMap -> {
                 typeIntegerEnumMap.put(ArmorItem.Type.BOOTS, 2);
@@ -30,10 +29,8 @@ public class ModArmorMaterials {
                     List.of(new ArmorMaterial.Layer(Identifier.of(MysteriousMod.MOD_ID, "mysterious"))),0,0));
 
 
-
     private static RegistryEntry<ArmorMaterial> registryEntry(String name, Supplier<ArmorMaterial> materialSupplier){
-        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MysteriousMod.MOD_ID, name),
-                materialSupplier.get());
+        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MysteriousMod.MOD_ID, name), materialSupplier.get());
     }
 
 

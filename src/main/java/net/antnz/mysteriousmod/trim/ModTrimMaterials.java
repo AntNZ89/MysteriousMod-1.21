@@ -16,7 +16,7 @@ import net.minecraft.util.Util;
 import java.util.Map;
 
 public class ModTrimMaterials {
-
+    
     public static final RegistryKey<ArmorTrimMaterial> MYSTERIOUS = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious"));
 
