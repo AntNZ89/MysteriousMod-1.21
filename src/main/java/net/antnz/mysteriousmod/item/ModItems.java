@@ -4,13 +4,18 @@ import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.item.custom.*;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -43,8 +48,8 @@ public class ModItems {
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_HOE = registerItem("mysterious_hoe",
-            new HoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -1))
+            new MysteriousHoeItem(ModToolMaterials.MYSTERIOUS, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.MYSTERIOUS, 2, -2))
                     .rarity(Rarity.EPIC)));
 
     public static final Item MYSTERIOUS_REMOVER = registerItem("mysterious_remover",

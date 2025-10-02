@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModModelPredicates {
 
 
-    public static void registerModelPredicates(){
+    public static void registerModelPredicate(){
         ModelPredicateProviderRegistry.register(ModItems.MYSTERIOUS_CHISEL, Identifier.of(MysteriousMod.MOD_ID, "used"),
                 (stack, world, entity, seed) -> stack.get(ModDataComponentTypes.COORDINATES) != null? 1f : 0f);
 
@@ -32,6 +32,5 @@ public class ModModelPredicates {
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pulling"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F);
 
     }
-
 
 }
