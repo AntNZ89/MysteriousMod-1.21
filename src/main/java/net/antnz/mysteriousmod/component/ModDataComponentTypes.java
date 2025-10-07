@@ -18,8 +18,9 @@ public class ModDataComponentTypes {
                 builderUnaryOperator.apply(ComponentType.builder()).build());
     }
 
+
     public static void registerModDataComponentTypes(){
-        MysteriousMod.LOGGER.info("Registering Data Component Types for " + MysteriousMod.MOD_ID);
+        MysteriousMod.LOGGER.info("Registering Component Types for " + MysteriousMod.MOD_ID);
     }
 
 }

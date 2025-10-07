@@ -24,9 +24,9 @@ public class ModTrimMaterials {
         register(registerable, MYSTERIOUS, Registries.ITEM.getEntry(ModItems.MYSTERIOUS_ITEM),
                 Style.EMPTY.withColor(TextColor.parse("#FFFFFF").getOrThrow()), 0.9f);
     }
-    
+
     private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> registryKey,
-                                RegistryEntry<Item> item, Style style, float index){
+                                 RegistryEntry<Item> item, Style style, float index){
 
         ArmorTrimMaterial armorTrimMaterial = new ArmorTrimMaterial(registryKey.getValue().getPath(), item, index, Map.of(),
                 Text.translatable(Util.createTranslationKey("trim_material", registryKey.getValue())).fillStyle(style));

@@ -19,6 +19,8 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -53,9 +55,9 @@ public class ChiselItem extends Item {
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, pos);
 
-                world.setBlockState(pos, ModBlocks.MYSTERIOUS_LAMP_BLOCK.getDefaultState());
+                world.setBlockState(pos, CHISEL_MAP.get(block).getDefaultState());
 
-                world.playSound(null, pos, ModSounds.CHISEL_USE, SoundCategory.BLOCKS, 2f, 1f);
+                world.playSound(null, pos, ModSounds.CHISEL_USE, SoundCategory.BLOCKS, 1f, 1f);
 
             }
         }

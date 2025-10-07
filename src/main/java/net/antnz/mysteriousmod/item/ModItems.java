@@ -4,6 +4,7 @@ import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.item.custom.*;
 import net.antnz.mysteriousmod.sound.ModSounds;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -83,7 +84,20 @@ public class ModItems {
             new MysteriousBowItem(new Item.Settings().maxDamage(10)));
 
     public static final Item MYSTERIOUS_ANTHEM_MUSIC_DISC = registerItem("mysterious_anthem_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)));
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    if (Screen.hasShiftDown()){
+                        tooltip.add(Text.literal("Hearing this everywhere is definitely §2INTENDED"));
+                    }
+                    else {
+                        tooltip.add(Text.literal("press SHIFT"));
+                    }
+
+
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
 
     private static Item registerItem(String name, Item item){
