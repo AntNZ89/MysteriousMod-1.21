@@ -84,20 +84,7 @@ public class ModItems {
             new MysteriousBowItem(new Item.Settings().maxDamage(10)));
 
     public static final Item MYSTERIOUS_ANTHEM_MUSIC_DISC = registerItem("mysterious_anthem_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)){
-                @Override
-                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-                    if (Screen.hasShiftDown()){
-                        tooltip.add(Text.literal("Hearing this everywhere is definitely §2INTENDED"));
-                    }
-                    else {
-                        tooltip.add(Text.literal("press SHIFT"));
-                    }
-
-
-                    super.appendTooltip(stack, context, tooltip, type);
-                }
-            });
+            new MysteriousDiscItem(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){
@@ -106,13 +93,11 @@ public class ModItems {
 
 
     public static void registerFuel(){
-        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_COAL, 400);
+        FuelRegistry.INSTANCE.add(ModItems.MYSTERIOUS_COAL, 200);
     }
-
 
     public static void registerModItems(){
         MysteriousMod.LOGGER.info("Registering Items for " + MysteriousMod.MOD_ID);
     }
-
 
 }
