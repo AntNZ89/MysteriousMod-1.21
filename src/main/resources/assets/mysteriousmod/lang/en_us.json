@@ -11,6 +11,7 @@
   "item.mysteriousmod.mysterious_coal": "Mysterious Coal",
   "item.mysteriousmod.mysterious_remover": "Mysterious Remover",
   "item.mysteriousmod.mysterious_bow": "Mysterious Bow",
+  "item.mysteriousmod.mysterious_anthem_music_disc": "Mysterious Anthem Music Disc",
 
   "item.mysteriousmod.mysterious_helmet": "Mysterious Helmet",
   "item.mysteriousmod.mysterious_chestplate": "Mysterious Chestplate",
@@ -34,7 +35,7 @@
   "block.mysteriousmod.pink_garnet_door": "Pink Garnet Door",
   "block.mysteriousmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
-  "itemgorup.mysteriousmod.mysterious_items": "Mysterious Items",
+  "itemgroup.mysteriousmod.mysterious_items": "Mysterious Items",
   "itemgroup.mysteriousmod.mysterious_blocks": "Mysterious Blocks",
 
   "trim_material.mysteriousmod.mysterious": "Mysterious Material"

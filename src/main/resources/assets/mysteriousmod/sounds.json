@@ -34,5 +34,13 @@
     "sounds": [
       "mysteriousmod:mysterious_block_step"
     ]
+  },
+  "mysterious_anthem": {
+    "sounds": [
+      {
+        "name": "mysteriousmod:mysterious_anthem",
+        "stream": true
+      }
+    ]
   }
 }

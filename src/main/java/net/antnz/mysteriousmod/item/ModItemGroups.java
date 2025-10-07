@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MYSTERIOUS_ITEM);
                         entries.add(ModItems.MYSTERIOUS_MUTTON);
                         entries.add(ModItems.MYSTERIOUS_COAL);
+                        entries.add(ModItems.MYSTERIOUS_ANTHEM_MUSIC_DISC);
                     })
                     .build());
 

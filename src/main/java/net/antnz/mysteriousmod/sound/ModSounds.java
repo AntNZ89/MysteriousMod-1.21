@@ -1,8 +1,11 @@
 package net.antnz.mysteriousmod.sound;
 
 import net.antnz.mysteriousmod.MysteriousMod;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -19,6 +22,10 @@ public class ModSounds {
 
     public static final BlockSoundGroup MYSTERIOUS_SOUNDS = new BlockSoundGroup(1f, 1f, MYSTERIOUS_BLOCK_BREAK, MYSTERIOUS_BLOCK_STEP,
             MYSTERIOUS_BLOCK_PLACE, MYSTERIOUS_BLOCK_HIT, MYSTERIOUS_BLOCK_FALL);
+
+    public static final SoundEvent MYSTERIOUS_ANTHEM = registerSound("mysterious_anthem");
+    public static final RegistryKey<JukeboxSong> MYSTERIOUS_ANTHEM_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG,
+            Identifier.of(MysteriousMod.MOD_ID, "mysterious_anthem"));
 
     private static SoundEvent registerSound(String name){
         Identifier id  = Identifier.of(MysteriousMod.MOD_ID, name);

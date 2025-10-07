@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod.item;
 
 import net.antnz.mysteriousmod.MysteriousMod;
 import net.antnz.mysteriousmod.item.custom.*;
+import net.antnz.mysteriousmod.sound.ModSounds;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.LivingEntity;
@@ -80,6 +81,9 @@ public class ModItems {
 
     public static final Item MYSTERIOUS_BOW = registerItem("mysterious_bow",
             new MysteriousBowItem(new Item.Settings().maxDamage(10)));
+
+    public static final Item MYSTERIOUS_ANTHEM_MUSIC_DISC = registerItem("mysterious_anthem_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item){
