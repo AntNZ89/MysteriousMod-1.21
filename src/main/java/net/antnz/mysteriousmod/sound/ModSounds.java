@@ -20,7 +20,7 @@ public class ModSounds {
     public static final SoundEvent MYSTERIOUS_BLOCK_PLACE = registerSound("mysterious_block_place");
     public static final SoundEvent MYSTERIOUS_BLOCK_STEP = registerSound("mysterious_block_step");
 
-    public static final BlockSoundGroup MYSTERIOUS_SOUNDS = new BlockSoundGroup(1f, 1f, MYSTERIOUS_BLOCK_BREAK, MYSTERIOUS_BLOCK_STEP,
+    public static final BlockSoundGroup MYSTERIOUS_SOUNDS = new BlockSoundGroup(2f, 0.01f, MYSTERIOUS_BLOCK_BREAK, MYSTERIOUS_BLOCK_STEP,
             MYSTERIOUS_BLOCK_PLACE, MYSTERIOUS_BLOCK_HIT, MYSTERIOUS_BLOCK_FALL);
 
     public static final SoundEvent MYSTERIOUS_ANTHEM = registerSound("mysterious_anthem");
