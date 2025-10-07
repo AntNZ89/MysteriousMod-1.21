@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
 
-    public static ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup MYSTERIOUS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MysteriousMod.MOD_ID, "mysterious_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MYSTERIOUS_ITEM))
                     .displayName(Text.translatable("itemgroup.mysteriousmod.mysterious_items"))
