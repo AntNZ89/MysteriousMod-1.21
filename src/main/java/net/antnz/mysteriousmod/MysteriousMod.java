@@ -2,6 +2,7 @@ package net.antnz.mysteriousmod;
 
 import net.antnz.mysteriousmod.block.ModBlocks;
 import net.antnz.mysteriousmod.component.ModDataComponentTypes;
+import net.antnz.mysteriousmod.effect.ModEffects;
 import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.antnz.mysteriousmod.sound.ModSounds;
@@ -38,6 +39,7 @@ public class MysteriousMod implements ModInitializer {
 		ModDataComponentTypes.registerModDataComponentTypes();
 		ModItems.registerFuel();
 		ModSounds.registerModSounds();
+		ModEffects.registerEffects();
 
 
 		UseEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
