@@ -32,7 +32,6 @@ public class ModSounds {
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 
-
     public static void registerModSounds(){
         MysteriousMod.LOGGER.info("Registering Sounds for " + MysteriousMod.MOD_ID);
     }
