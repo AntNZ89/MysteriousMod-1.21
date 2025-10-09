@@ -40,9 +40,9 @@ public class CatapultEffect extends StatusEffect {
             float k = -MathHelper.sin(h * ((float)Math.PI / 180F));
             float l = MathHelper.cos(g * ((float)Math.PI / 180F)) * MathHelper.cos(h * ((float)Math.PI / 180F));
             float m = MathHelper.sqrt(j * j + k * k + l * l);
-            j *= m;
-            k *= m;
-            l *= m;
+            j *= m/2;
+            k *= m/2;
+            l *= m/2;
             playerEntity.addVelocity((double)j, (double)k, (double)l);
             return true;
         }
@@ -51,7 +51,7 @@ public class CatapultEffect extends StatusEffect {
             canWind=true;
         }
 
-        if (playerEntity.groundCollision){
+        if (playerEntity.isOnGround()){
             World serverWorld = playerEntity.getWorld();
             if (serverWorld instanceof ServerWorld serverWorld1 && canWind){
                 double d = playerEntity.getX();
