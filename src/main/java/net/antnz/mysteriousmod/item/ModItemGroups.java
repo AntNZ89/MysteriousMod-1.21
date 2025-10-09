@@ -69,6 +69,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MYSTERIOUS_HOE);
                         entries.add(ModItems.MYSTERIOUS_CHISEL);
                         entries.add(ModItems.MYSTERIOUS_REMOVER);
+                        entries.add(ModItems.CATAPULT_WAND);
 
 
                     })

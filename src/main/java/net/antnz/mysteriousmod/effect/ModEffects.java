@@ -13,14 +13,20 @@ import net.minecraft.util.Identifier;
 public class ModEffects {
 
 
-    public static final RegistryEntry<StatusEffect> CATAPULT = registerSoundEffect("high_gravity",
+    public static final RegistryEntry<StatusEffect> HIGH_GRAVITY = registerEffect("high_gravity",
             new HighGravityEffect(StatusEffectCategory.NEUTRAL, 0x35abeb)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
                             Identifier.of(MysteriousMod.MOD_ID, "high_gravity"), 0.5f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final RegistryEntry<StatusEffect> CATAPULT = registerEffect("catapult",
+            new CatapultEffect(StatusEffectCategory.NEUTRAL, 0x35abeb)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Identifier.of(MysteriousMod.MOD_ID, "catapult"), 0.5,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
-    private static RegistryEntry<StatusEffect> registerSoundEffect(String name, StatusEffect statusEffect){
+
+    private static RegistryEntry<StatusEffect> registerEffect(String name, StatusEffect statusEffect){
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(MysteriousMod.MOD_ID, name), statusEffect);
     }
 

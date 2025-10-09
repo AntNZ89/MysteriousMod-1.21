@@ -75,6 +75,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.MYSTERIOUS_BOOTS));
 
         itemModelGenerator.register(ModItems.MYSTERIOUS_ANTHEM_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CATAPULT_WAND, Models.GENERATED);
 
 
     }

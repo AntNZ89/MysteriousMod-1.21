@@ -13,6 +13,7 @@
   "item.mysteriousmod.mysterious_bow": "Mysterious Bow",
   "item.mysteriousmod.mysterious_anthem_music_disc": "Mysterious Anthem Music Disc",
   "item.mysteriousmod.mysterious_anthem_music_disc.desc": "(Free) Horror Ambiance - Ominous Background Music",
+  "item.mysteriousmod.catapult_wand": "Catapult Wand",
 
   "item.mysteriousmod.mysterious_helmet": "Mysterious Helmet",
   "item.mysteriousmod.mysterious_chestplate": "Mysterious Chestplate",
@@ -41,7 +42,8 @@
 
   "trim_material.mysteriousmod.mysterious": "Mysterious Material",
 
-  "effect.mysteriousmod.high_gravity": "High Gravity"
+  "effect.mysteriousmod.high_gravity": "High Gravity",
+  "effect.mysteriousmod.catapult": "Catapult"
 
 
 

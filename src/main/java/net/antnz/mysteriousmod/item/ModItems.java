@@ -86,6 +86,9 @@ public class ModItems {
     public static final Item MYSTERIOUS_ANTHEM_MUSIC_DISC = registerItem("mysterious_anthem_music_disc",
             new MysteriousDiscItem(new Item.Settings().jukeboxPlayable(ModSounds.MYSTERIOUS_ANTHEM_KEY).maxCount(1)));
 
+    public static final Item CATAPULT_WAND = registerItem("catapult_wand",
+            new CatapultStickItem(new Item.Settings().maxCount(1)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(MysteriousMod.MOD_ID, name), item);

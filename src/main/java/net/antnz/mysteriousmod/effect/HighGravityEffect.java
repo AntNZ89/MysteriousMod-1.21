@@ -25,11 +25,8 @@ public class HighGravityEffect extends StatusEffect {
             Vec3d initial = entity.getVelocity();
             Vec3d climbing  = new Vec3d(initial.x, 0.1, initial.z);
             entity.setVelocity(climbing);
-
             return true;
-
         }
-
         return super.applyUpdateEffect(entity, amplifier);
     }
 

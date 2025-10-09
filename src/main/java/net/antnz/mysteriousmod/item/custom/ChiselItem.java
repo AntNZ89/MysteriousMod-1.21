@@ -25,6 +25,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 import java.util.HashMap;
@@ -48,8 +49,10 @@ public class ChiselItem extends Item {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();
         Block block = world.getBlockState(pos).getBlock();
+        PlayerEntity playerEntity = context.getPlayer();
 
         if (world instanceof ServerWorld){
+
 
             if (CHISEL_MAP.containsKey(block)){
 
