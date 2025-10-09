@@ -3,11 +3,15 @@ package net.antnz.mysteriousmod.effect;
 import net.antnz.mysteriousmod.item.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageSources;
+import net.minecraft.entity.damage.DamageType;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.projectile.AbstractWindChargeEntity;
 import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.MathHelper;
@@ -52,6 +56,7 @@ public class CatapultEffect extends StatusEffect {
         }
 
         if (playerEntity.isOnGround()){
+            playerEntity.setInvulnerable(true);
             World serverWorld = playerEntity.getWorld();
             if (serverWorld instanceof ServerWorld serverWorld1 && canWind){
                 double d = playerEntity.getX();
@@ -60,6 +65,7 @@ public class CatapultEffect extends StatusEffect {
                 float g = 3.0F + playerEntity.getRandom().nextFloat() * 2.0F;
                 serverWorld1.createExplosion(playerEntity, (DamageSource)null, AbstractWindChargeEntity.EXPLOSION_BEHAVIOR, d, e, f, g, false, World.ExplosionSourceType.TNT, ParticleTypes.GUST_EMITTER_SMALL, ParticleTypes.GUST_EMITTER_LARGE, SoundEvents.ENTITY_BREEZE_WIND_BURST);
                 canWind = false;
+                playerEntity.setInvulnerable(false);
                 return true;
             }
         }
