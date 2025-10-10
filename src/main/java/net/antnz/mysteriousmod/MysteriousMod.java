@@ -5,17 +5,22 @@ import net.antnz.mysteriousmod.component.ModDataComponentTypes;
 import net.antnz.mysteriousmod.effect.ModEffects;
 import net.antnz.mysteriousmod.item.ModItemGroups;
 import net.antnz.mysteriousmod.item.ModItems;
+import net.antnz.mysteriousmod.potion.ModPotions;
 import net.antnz.mysteriousmod.sound.ModSounds;
+import net.antnz.mysteriousmod.util.ModTags;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -40,6 +45,7 @@ public class MysteriousMod implements ModInitializer {
 		ModItems.registerFuel();
 		ModSounds.registerModSounds();
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 
 		UseEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
@@ -60,6 +66,10 @@ public class MysteriousMod implements ModInitializer {
 				return ActionResult.PASS;
 			}
 			return ActionResult.SUCCESS;
+		});
+
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(Potions.LEAPING, Items.ANVIL, ModPotions.HIGH_GRAVITY_POTION);
 		});
 
 

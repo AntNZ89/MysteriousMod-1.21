@@ -15,6 +15,11 @@
   "item.mysteriousmod.mysterious_anthem_music_disc.desc": "(Free) Horror Ambiance - Ominous Background Music",
   "item.mysteriousmod.catapult_wand": "Catapult Wand",
 
+  "item.minecraft.potion.effect.high_gravity_potion": "High Gravity Potion",
+  "item.minecraft.splash_potion.effect.high_gravity_potion": "High Gravity Splash Potion",
+  "item.minecraft.lingering_potion.effect.high_gravity_potion": "High Gravity Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.high_gravity_potion": "High Gravity Tipped Arrow",
+
   "item.mysteriousmod.mysterious_helmet": "Mysterious Helmet",
   "item.mysteriousmod.mysterious_chestplate": "Mysterious Chestplate",
   "item.mysteriousmod.mysterious_leggings": "Mysterious Leggings",
