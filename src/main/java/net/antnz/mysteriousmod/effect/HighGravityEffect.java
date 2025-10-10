@@ -11,10 +11,10 @@ import net.minecraft.item.Items;
 import net.minecraft.util.math.Vec3d;
 
 public class HighGravityEffect extends StatusEffect {
-
-    public HighGravityEffect(StatusEffectCategory category, int color) {
+    protected HighGravityEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
+
 
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
@@ -22,11 +22,15 @@ public class HighGravityEffect extends StatusEffect {
         entity.setVelocity(entity.getVelocity().x, -100, entity.getVelocity().z);
 
         if (entity.horizontalCollision){
+
             Vec3d initial = entity.getVelocity();
-            Vec3d climbing  = new Vec3d(initial.x, 0.1, initial.z);
+            Vec3d climbing = new Vec3d(initial.x, 0.1, initial.z);
             entity.setVelocity(climbing);
             return true;
+
         }
+
+
         return super.applyUpdateEffect(entity, amplifier);
     }
 
@@ -34,6 +38,4 @@ public class HighGravityEffect extends StatusEffect {
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }
-
-
 }
