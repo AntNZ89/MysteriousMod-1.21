@@ -30,7 +30,6 @@ public class HighGravityEffect extends StatusEffect {
 
         }
 
-
         return super.applyUpdateEffect(entity, amplifier);
     }
 

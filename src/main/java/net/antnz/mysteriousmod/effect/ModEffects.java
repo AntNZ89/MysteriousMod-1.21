@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModEffects {
 
     public static final RegistryEntry<StatusEffect> CATAPULT = registerEffect("catapult",
-            new CatapultEffect(StatusEffectCategory.NEUTRAL, 0x12abeb)
+            new CatapultEffect(StatusEffectCategory.NEUTRAL, 0x56abeb)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
                             Identifier.of(MysteriousMod.MOD_ID, "catapult"), 0.5,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
