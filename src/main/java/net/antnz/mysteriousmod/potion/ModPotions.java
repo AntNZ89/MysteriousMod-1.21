@@ -13,7 +13,8 @@ import net.minecraft.util.Identifier;
 public class ModPotions {
 
     public static final RegistryEntry<Potion> HIGH_GRAVITY_POTION = registerPotion("high_gravity_potion",
-            new Potion(new StatusEffectInstance(ModEffects.HIGH_GRAVITY, 1200, 0)));
+            new Potion(new StatusEffectInstance(ModEffects.HIGH_GRAVITY, 1200, 1)));
+
 
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion){
         return Registry.registerReference(Registries.POTION, Identifier.of(MysteriousMod.MOD_ID, name), potion);
