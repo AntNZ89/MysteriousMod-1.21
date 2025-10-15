@@ -22,12 +22,9 @@ public class HighGravityEffect extends StatusEffect {
         entity.setVelocity(entity.getVelocity().x, -100, entity.getVelocity().z);
 
         if (entity.horizontalCollision){
-
             Vec3d initial = entity.getVelocity();
-            Vec3d climbing = new Vec3d(initial.x, 0.1, initial.z);
+            Vec3d climbing = new Vec3d(initial.x, -100, initial.z);
             entity.setVelocity(climbing);
-            return true;
-
         }
 
         return super.applyUpdateEffect(entity, amplifier);

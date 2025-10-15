@@ -19,7 +19,7 @@ public class ModEffects {
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final RegistryEntry<StatusEffect> HIGH_GRAVITY = registerEffect("high_gravity",
-            new HighGravityEffect(StatusEffectCategory.NEUTRAL, 0x33abeb)
+            new HighGravityEffect(StatusEffectCategory.NEUTRAL, 0x34abeb)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
                             Identifier.of(MysteriousMod.MOD_ID, "high_gravity"), -0.5,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
